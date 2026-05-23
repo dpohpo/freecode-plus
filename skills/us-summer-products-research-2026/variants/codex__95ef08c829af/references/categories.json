@@ -1,0 +1,31 @@
+{
+  "categories": [
+    "sports",
+    "water",
+    "garden",
+    "party",
+    "ball",
+    "toy",
+    "apparel",
+    "electronics",
+    "pet",
+    "home"
+  ],
+  "categoryCounts": {
+    "sports": 14,
+    "water": 12,
+    "garden": 11,
+    "party": 9,
+    "ball": 10,
+    "toy": 9,
+    "apparel": 13,
+    "electronics": 9,
+    "pet": 9,
+    "home": 12
+  },
+  "tagCounts": {
+    "hot": 37,
+    "trend": 64,
+    "new": 26
+  }
+}

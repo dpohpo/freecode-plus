@@ -1,0 +1,8 @@
+{
+  "name": "errorlog",
+  "description": "错误分类记录系统 - 圣斗士模式，同样的错误不犯两次",
+  "version": "1.0.0",
+  "triggers": ["errorlog", "错误记录", "错误分类"],
+  "instructions": "错误发生时自动分类记录，执行前检查历史错误。支持新错误类型发现和预防建议。",
+  "files": ["skill.md"]
+}

@@ -1,0 +1,3 @@
+display_name: OpenCode
+short_description: Send structured 6.0b collaboration prompts from Codex to OpenCode.
+default_prompt: Use $opencode to forward conclusions, file paths, and concrete questions to OpenCode through the scripted bridge.

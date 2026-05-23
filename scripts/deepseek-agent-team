@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$ROOT/scripts/resolve-bun.sh"
+BUN_BIN="$(resolve_bun_bin)"
+CLI="$ROOT/scripts/freecode-source-cli.sh"
+
+if [[ -z "${DEEPSEEK_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
+  DEEPSEEK_API_KEY="$(security find-generic-password -a "$USER" -s freecode-deepseek-api-key -w 2>/dev/null || true)"
+fi
+
+TOKEN="${DEEPSEEK_ANTHROPIC_AUTH_TOKEN:-${DEEPSEEK_API_KEY:-}}"
+if [[ -z "$TOKEN" ]]; then
+  echo "Set DEEPSEEK_API_KEY or DEEPSEEK_ANTHROPIC_AUTH_TOKEN before running deepseek-agent-team." >&2
+  exit 1
+fi
+
+SETTINGS_FILE="$(mktemp "${TMPDIR:-/tmp}/freecode-deepseek-agent-team.XXXXXX")"
+chmod 600 "$SETTINGS_FILE"
+trap 'rm -f "$SETTINGS_FILE"' EXIT
+
+export SETTINGS_FILE
+export DEEPSEEK_ANTHROPIC_BASE_URL="${DEEPSEEK_ANTHROPIC_BASE_URL:-https://api.deepseek.com/anthropic}"
+export DEEPSEEK_AGENT_TEAM_MODEL="${DEEPSEEK_AGENT_TEAM_MODEL:-deepseek-v4-pro}"
+export DEEPSEEK_AGENT_TEAM_SMALL_MODEL="${DEEPSEEK_AGENT_TEAM_SMALL_MODEL:-deepseek-v4-flash}"
+export DEEPSEEK_API_TIMEOUT_MS="${DEEPSEEK_API_TIMEOUT_MS:-3000000}"
+export DEEPSEEK_EFFORT_LEVEL="${DEEPSEEK_EFFORT_LEVEL:-max}"
+export DEEPSEEK_ANTHROPIC_AUTH_TOKEN="$TOKEN"
+export FREECODE_AGENT_TEAM_MODEL_PROFILES="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agent-team-model-profiles.json}"
+export FREEGLM_TEAM_LAYOUT="${FREEGLM_TEAM_LAYOUT:-grid}"
+
+"$ROOT/scripts/ensure-agent-team-profiles"
+
+"$BUN_BIN" --eval '
+const settings = {
+  env: {
+    ANTHROPIC_BASE_URL: process.env.DEEPSEEK_ANTHROPIC_BASE_URL,
+    ANTHROPIC_API_KEY: process.env.DEEPSEEK_ANTHROPIC_AUTH_TOKEN,
+    ANTHROPIC_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_SONNET_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_OPUS_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_HAIKU_MODEL: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL,
+    ANTHROPIC_SMALL_FAST_MODEL: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL,
+    ANTHROPIC_CUSTOM_MODEL_OPTION: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+    ANTHROPIC_CUSTOM_MODEL_OPTION_NAME: "DeepSeek V4 Pro",
+    ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION: "DeepSeek V4 Pro via DeepSeek Anthropic-compatible API",
+    CLAUDE_CODE_SUBAGENT_MODEL: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL,
+    CLAUDE_CODE_EFFORT_LEVEL: process.env.DEEPSEEK_EFFORT_LEVEL,
+    API_TIMEOUT_MS: process.env.DEEPSEEK_API_TIMEOUT_MS,
+  },
+  model: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+  availableModels: [
+    process.env.DEEPSEEK_AGENT_TEAM_MODEL,
+    process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL,
+    "opus",
+    "sonnet",
+    "haiku",
+  ],
+  teammateDefaultModel: null,
+}
+await Bun.write(process.env.SETTINGS_FILE, JSON.stringify(settings, null, 2) + "\n")
+'
+
+env \
+  -u ANTHROPIC_API_KEY \
+  -u ANTHROPIC_AUTH_TOKEN \
+  -u ANTHROPIC_BASE_URL \
+  -u ANTHROPIC_MODEL \
+  -u CLAUDE_CODE_DISABLE_1M_CONTEXT \
+  BUN_BIN="$BUN_BIN" \
+  FREECODE_AGENT_TEAM_MODEL_PROFILES="$FREECODE_AGENT_TEAM_MODEL_PROFILES" \
+  FREEGLM_TEAM_LAYOUT="$FREEGLM_TEAM_LAYOUT" \
+  CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 \
+  CLAUDE_CODE_TEAMMATE_COMMAND="$CLI" \
+  "$CLI" --dangerously-skip-permissions --permission-mode bypassPermissions --settings "$SETTINGS_FILE" --append-system-prompt-file "$ROOT/scripts/agent-team-system-prompt.txt" --teammate-mode tmux "$@"

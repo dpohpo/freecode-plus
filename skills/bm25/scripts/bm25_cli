@@ -1,0 +1,301 @@
+#!/usr/bin/env python3
+"""
+BM25 CLI - 命令行 BM25 检索工具
+
+安装依赖:
+    pip install bm25s PyStemmer
+
+使用方法:
+    bm25_cli index <doc1> <doc2> ...           # 创建索引
+    bm25_cli search <query>                    # 搜索
+    bm25_cli batch <query1> <query2> ...       # 批量搜索
+    bm25_cli save <path>                       # 保存索引
+    bm25_cli load <path>                       # 加载索引
+    bm25_cli status                            # 查看状态
+    bm25_cli server                            # 启动 MCP 服务器
+"""
+
+import argparse
+import json
+import os
+import sys
+from pathlib import Path
+from typing import List, Optional
+
+# 添加当前目录到路径
+SCRIPT_DIR = Path(__file__).parent
+sys.path.insert(0, str(SCRIPT_DIR))
+
+try:
+    import bm25s
+    import Stemmer
+except ImportError:
+    print("Error: 请安装依赖: pip install bm25s PyStemmer")
+    sys.exit(1)
+
+# 默认索引路径
+DEFAULT_INDEX_PATH = Path.home() / ".bm25_index"
+
+
+class BM25CLI:
+    """BM25 命令行工具"""
+
+    def __init__(self):
+        self.retriever: Optional[bm25s.BM25] = None
+        self.tokenizer: Optional[bm25s.tokenization.Tokenizer] = None
+        self.corpus: List[str] = []
+        self.stemmer = Stemmer.Stemmer("english")
+        self.index_path = DEFAULT_INDEX_PATH
+
+    def _ensure_index(self):
+        """确保索引已加载"""
+        if self.retriever is None and self.index_path.exists():
+            self.load(str(self.index_path))
+
+    def index(self, documents: List[str], method: str = "lucene",
+              k1: float = 1.5, b: float = 0.75, stopwords: str = "en") -> dict:
+        """创建索引"""
+        self.corpus = documents
+
+        self.tokenizer = bm25s.tokenization.Tokenizer(
+            stemmer=self.stemmer,
+            stopwords=stopwords if stopwords != "none" else [],
+            lower=True,
+        )
+
+        corpus_tokens = self.tokenizer.tokenize(documents, return_as="tuple")
+
+        self.retriever = bm25s.BM25(
+            method=method, k1=k1, b=b, corpus=documents
+        )
+        self.retriever.index(corpus_tokens)
+
+        # 自动保存到默认路径
+        self.save(str(self.index_path))
+
+        return {
+            "success": True,
+            "num_documents": len(documents),
+            "vocab_size": len(self.tokenizer.get_vocab_dict()),
+            "method": method,
+            "index_path": str(self.index_path)
+        }
+
+    def search(self, query: str, k: int = 5) -> List[dict]:
+        """搜索"""
+        self._ensure_index()
+        if self.retriever is None:
+            return [{"error": "请先创建或加载索引"}]
+
+        query_tokens = self.tokenizer.tokenize([query], update_vocab=False)
+        results, scores = self.retriever.retrieve(query_tokens, k=k)
+
+        output = []
+        for i in range(results.shape[1]):
+            doc_idx = int(results[0, i])
+            output.append({
+                "rank": i + 1,
+                "doc_index": doc_idx,
+                "score": round(float(scores[0, i]), 4),
+                "document": self.corpus[doc_idx] if doc_idx < len(self.corpus) else None
+            })
+        return output
+
+    def batch(self, queries: List[str], k: int = 5) -> List[dict]:
+        """批量搜索"""
+        self._ensure_index()
+        if self.retriever is None:
+            return [{"error": "请先创建或加载索引"}]
+
+        query_tokens = self.tokenizer.tokenize(queries, update_vocab=False)
+        results, scores = self.retriever.retrieve(query_tokens, k=k)
+
+        output = []
+        for q_idx in range(len(queries)):
+            query_results = []
+            for i in range(results.shape[1]):
+                doc_idx = int(results[q_idx, i])
+                query_results.append({
+                    "rank": i + 1,
+                    "doc_index": doc_idx,
+                    "score": round(float(scores[q_idx, i]), 4),
+                    "document": self.corpus[doc_idx] if doc_idx < len(self.corpus) else None
+                })
+            output.append({
+                "query": queries[q_idx],
+                "results": query_results
+            })
+        return output
+
+    def save(self, path: str) -> dict:
+        """保存索引"""
+        if self.retriever is None:
+            return {"error": "没有可保存的索引"}
+
+        save_path = Path(path)
+        save_path.mkdir(parents=True, exist_ok=True)
+
+        self.retriever.save(str(save_path), corpus=self.corpus)
+        self.tokenizer.save_vocab(str(save_path))
+        self.tokenizer.save_stopwords(str(save_path))
+
+        return {"success": True, "path": str(save_path)}
+
+    def load(self, path: str, mmap: bool = False) -> dict:
+        """加载索引"""
+        load_path = Path(path)
+        if not load_path.exists():
+            return {"error": f"索引路径不存在: {path}"}
+
+        self.retriever = bm25s.BM25.load(str(load_path), load_corpus=True, mmap=mmap)
+
+        self.tokenizer = bm25s.tokenization.Tokenizer(stemmer=self.stemmer)
+        self.tokenizer.load_vocab(str(load_path))
+        self.tokenizer.load_stopwords(str(load_path))
+
+        if self.retriever.corpus:
+            self.corpus = self.retriever.corpus
+
+        self.index_path = load_path
+        return {"success": True, "path": str(load_path), "num_documents": len(self.corpus)}
+
+    def status(self) -> dict:
+        """查看状态"""
+        return {
+            "indexed": self.retriever is not None,
+            "num_documents": len(self.corpus),
+            "index_path": str(self.index_path),
+            "method": self.retriever.method if self.retriever else None,
+        }
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="BM25 命令行检索工具",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+示例:
+  # 创建索引
+  bm25_cli index "文档1" "文档2" "文档3"
+
+  # 从文件创建索引
+  bm25_cli index --file documents.txt
+
+  # 搜索
+  bm25_cli search "查询词" -k 10
+
+  # 批量搜索
+  bm25_cli batch "查询1" "查询2"
+
+  # 保存/加载索引
+  bm25_cli save ./my_index
+  bm25_cli load ./my_index
+
+  # 启动 MCP 服务器
+  bm25_cli server
+        """
+    )
+
+    subparsers = parser.add_subparsers(dest="command", help="命令")
+
+    # index 命令
+    index_parser = subparsers.add_parser("index", help="创建索引")
+    index_parser.add_argument("documents", nargs="*", help="文档列表")
+    index_parser.add_argument("--file", "-f", help="从文件读取文档 (每行一个)")
+    index_parser.add_argument("--method", "-m", default="lucene",
+                              choices=["robertson", "lucene", "atire", "bm25l", "bm25+"])
+    index_parser.add_argument("--k1", type=float, default=1.5)
+    index_parser.add_argument("--b", type=float, default=0.75)
+    index_parser.add_argument("--stopwords", "-s", default="en")
+
+    # search 命令
+    search_parser = subparsers.add_parser("search", help="搜索文档")
+    search_parser.add_argument("query", help="查询文本")
+    search_parser.add_argument("--k", "-k", type=int, default=5, help="返回结果数")
+    search_parser.add_argument("--json", "-j", action="store_true", help="JSON 格式输出")
+
+    # batch 命令
+    batch_parser = subparsers.add_parser("batch", help="批量搜索")
+    batch_parser.add_argument("queries", nargs="+", help="查询列表")
+    batch_parser.add_argument("--k", "-k", type=int, default=5)
+
+    # save 命令
+    save_parser = subparsers.add_parser("save", help="保存索引")
+    save_parser.add_argument("path", help="保存路径")
+
+    # load 命令
+    load_parser = subparsers.add_parser("load", help="加载索引")
+    load_parser.add_argument("path", help="索引路径")
+    load_parser.add_argument("--mmap", action="store_true", help="内存映射模式")
+
+    # status 命令
+    subparsers.add_parser("status", help="查看状态")
+
+    # server 命令
+    server_parser = subparsers.add_parser("server", help="启动 MCP 服务器")
+    server_parser.add_argument("--port", "-p", type=int, default=8000)
+
+    args = parser.parse_args()
+
+    if args.command is None:
+        parser.print_help()
+        return
+
+    cli = BM25CLI()
+
+    try:
+        if args.command == "index":
+            docs = args.documents or []
+            if args.file:
+                with open(args.file, "r", encoding="utf-8") as f:
+                    docs = [line.strip() for line in f if line.strip()]
+            if not docs:
+                print("Error: 请提供文档")
+                sys.exit(1)
+            result = cli.index(docs, args.method, args.k1, args.b, args.stopwords)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+
+        elif args.command == "search":
+            result = cli.search(args.query, args.k)
+            if args.json:
+                print(json.dumps(result, indent=2, ensure_ascii=False))
+            else:
+                for r in result:
+                    print(f"[{r['rank']}] score={r['score']:.4f}")
+                    print(f"    {r['document'][:100]}{'...' if len(r['document'] or '') > 100 else ''}")
+                    print()
+
+        elif args.command == "batch":
+            result = cli.batch(args.queries, args.k)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+
+        elif args.command == "save":
+            result = cli.save(args.path)
+            print(json.dumps(result, indent=2))
+
+        elif args.command == "load":
+            result = cli.load(args.path, args.mmap)
+            print(json.dumps(result, indent=2))
+
+        elif args.command == "status":
+            result = cli.status()
+            print(json.dumps(result, indent=2))
+
+        elif args.command == "server":
+            print(f"启动 MCP 服务器...")
+            print("注意: 需要安装 mcp 库: pip install mcp")
+            # 动态导入 MCP 服务器
+            try:
+                from bm25s_mcp_server import main as mcp_main
+                mcp_main()
+            except ImportError as e:
+                print(f"Error: 无法启动 MCP 服务器: {e}")
+                sys.exit(1)
+
+    except Exception as e:
+        print(json.dumps({"error": str(e)}, indent=2))
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

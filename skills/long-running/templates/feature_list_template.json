@@ -1,0 +1,32 @@
+[
+  {
+    "id": "F001",
+    "feature": "User can see the application homepage",
+    "test_code": "await page.goto('http://localhost:3000'); const title = await page.textContent('h1'); assert(title.length > 0);",
+    "passes": false
+  },
+  {
+    "id": "F002",
+    "feature": "User can create a new item",
+    "test_code": "await page.goto('http://localhost:3000'); await page.type('#new-item-input', 'Test Item'); await page.click('#add-button'); await page.waitForSelector('.item:has-text(\"Test Item\")');",
+    "passes": false
+  },
+  {
+    "id": "F003",
+    "feature": "User can view item details",
+    "test_code": "await page.goto('http://localhost:3000'); await page.click('.item:first-child'); await page.waitForSelector('.item-details');",
+    "passes": false
+  },
+  {
+    "id": "F004",
+    "feature": "User can edit an existing item",
+    "test_code": "await page.goto('http://localhost:3000'); await page.click('.item:first-child .edit-btn'); await page.type('#edit-input', 'Updated Item'); await page.click('#save-btn');",
+    "passes": false
+  },
+  {
+    "id": "F005",
+    "feature": "User can delete an item",
+    "test_code": "await page.goto('http://localhost:3000'); const countBefore = await page.locator('.item').count(); await page.click('.item:first-child .delete-btn'); const countAfter = await page.locator('.item').count(); assert(countAfter < countBefore);",
+    "passes": false
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "rel": "us-summer-products-research-2026",
+  "primary": {
+    "rel": "us-summer-products-research-2026",
+    "agent": "codex",
+    "root": "/Users/poincare/.codex/skills",
+    "path": "/Users/poincare/.codex/skills/us-summer-products-research-2026",
+    "real_path": "/Users/poincare/.codex/skills/us-summer-products-research-2026",
+    "skill_file": "/Users/poincare/.codex/skills/us-summer-products-research-2026/SKILL.md",
+    "skill_file_name": "SKILL.md",
+    "digest": "95ef08c829af9b876eb9e4d21c818a33bd76dc2793fb523ef70e90290385b33e",
+    "skill_digest": "fd630e7fe574670ffdebec098ff091584f74cde91a55b0092a9b9f9f5967dd9d",
+    "name": "us-summer-products-research-2026",
+    "description": "Generates the exact single-file HTML format and report-ready product data model of the US summer products selection report, including Chinese labels, cards, filters, expand/collapse interactions, category schema, economics fields, keyword fields, pain points, and differentiation notes. Use when the user mentions us-summer-products-research-2026, 美国夏季热销产品调研报告, summer products report, or asks to output the same product-selection HTML/data format.",
+    "file_count": 17
+  },
+  "variants": [
+    {
+      "rel": "us-summer-products-research-2026",
+      "agent": "codex",
+      "root": "/Users/poincare/.codex/skills",
+      "path": "/Users/poincare/.codex/skills/us-summer-products-research-2026",
+      "real_path": "/Users/poincare/.codex/skills/us-summer-products-research-2026",
+      "skill_file": "/Users/poincare/.codex/skills/us-summer-products-research-2026/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "95ef08c829af9b876eb9e4d21c818a33bd76dc2793fb523ef70e90290385b33e",
+      "skill_digest": "fd630e7fe574670ffdebec098ff091584f74cde91a55b0092a9b9f9f5967dd9d",
+      "name": "us-summer-products-research-2026",
+      "description": "Generates the exact single-file HTML format and report-ready product data model of the US summer products selection report, including Chinese labels, cards, filters, expand/collapse interactions, category schema, economics fields, keyword fields, pain points, and differentiation notes. Use when the user mentions us-summer-products-research-2026, 美国夏季热销产品调研报告, summer products report, or asks to output the same product-selection HTML/data format.",
+      "file_count": 17,
+      "preserved_variant": "variants/codex__95ef08c829af"
+    },
+    {
+      "rel": "us-summer-products-research-2026",
+      "agent": "opencode",
+      "root": "/Users/poincare/.config/opencode/skills",
+      "path": "/Users/poincare/.config/opencode/skills/us-summer-products-research-2026",
+      "real_path": "/Users/poincare/.config/opencode/skills/us-summer-products-research-2026",
+      "skill_file": "/Users/poincare/.config/opencode/skills/us-summer-products-research-2026/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "d832a9a42a7c6768da923232968e19dceb3281f263d884b490a366262b156a01",
+      "skill_digest": "4d53c13c5357a4666fa1d48afe345276dfda1c3ceaa0e0007a0cabbffe681ff3",
+      "name": "us-summer-products-research-2026",
+      "description": "Generates the exact single-file HTML format and report-ready product data model of the US summer products selection report, including Chinese labels, cards, filters, expand/collapse interactions, category schema, economics fields, keyword fields, pain points, and differentiation notes. Use when the user mentions us-summer-products-research-2026, 美国夏季热销产品调研报告, summer products report, or asks to output the same product-selection HTML/data format.",
+      "file_count": 15,
+      "preserved_variant": "variants/opencode__d832a9a42a7c"
+    }
+  ]
+}

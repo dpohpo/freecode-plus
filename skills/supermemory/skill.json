@@ -1,0 +1,8 @@
+{
+  "name": "supermemory",
+  "description": "Superpower 内部记忆系统 - compact 后查内部而非搜网络",
+  "version": "1.0.0",
+  "triggers": ["supermemory", "内部记忆", "记忆检索"],
+  "instructions": "任务完成时自动保存，compact 后提供内部检索。与 /memory 互为备份，与 /errorlog 共享错误库。",
+  "files": ["skill.md"]
+}

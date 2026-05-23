@@ -1,0 +1,379 @@
+{
+  "source": "/Users/poincare/.codex/skills/us-summer-products-research-2026/assets/source-report.html",
+  "analyzedAt": "2026-05-22T07:55:23.727Z",
+  "html": {
+    "title": "美国夏季热销产品调研报告 2026 — 100+产品运营数据",
+    "lang": "zh-CN",
+    "staticLineCount": 377
+  },
+  "data": {
+    "productCount": 108,
+    "categories": [
+      "sports",
+      "water",
+      "garden",
+      "party",
+      "ball",
+      "toy",
+      "apparel",
+      "electronics",
+      "pet",
+      "home"
+    ],
+    "categoryCounts": {
+      "sports": 14,
+      "water": 12,
+      "garden": 11,
+      "party": 9,
+      "ball": 10,
+      "toy": 9,
+      "apparel": 13,
+      "electronics": 9,
+      "pet": 9,
+      "home": 12
+    },
+    "tagCounts": {
+      "hot": 37,
+      "trend": 64,
+      "new": 26
+    },
+    "fields": [
+      "amazSelf",
+      "aplus",
+      "bsr",
+      "cat",
+      "cost",
+      "en",
+      "fba",
+      "id",
+      "imgs",
+      "improve",
+      "kw",
+      "margin",
+      "name",
+      "pains",
+      "peakMon",
+      "price",
+      "range",
+      "rating",
+      "refRate",
+      "revGrowth",
+      "revenue",
+      "reviews",
+      "sales",
+      "season",
+      "sellers",
+      "sv",
+      "tags",
+      "video"
+    ]
+  },
+  "css": {
+    "variables": {
+      "--primary": "#1a73e8",
+      "--primary-light": "#e8f0fe",
+      "--success": "#34a853",
+      "--warning": "#fbbc04",
+      "--danger": "#ea4335",
+      "--gray-50": "#f8f9fa",
+      "--gray-100": "#f1f3f4",
+      "--gray-200": "#e8eaed",
+      "--gray-600": "#5f6368",
+      "--gray-800": "#3c4043",
+      "--shadow": "0 1px 3px rgba(0,0,0,.12)",
+      "--radius": "10px"
+    },
+    "selectorCount": 60,
+    "selectors": [
+      ":root",
+      "*",
+      "body",
+      ".header",
+      ".header h1",
+      ".header .sub",
+      ".header .date",
+      ".container",
+      ".stats-bar",
+      ".stat-card",
+      ".stat-card .n",
+      ".stat-card .l",
+      "/* Filter */\n.filter-bar",
+      ".filter-bar button",
+      ".filter-bar button.active,.filter-bar button:hover",
+      ".search-box",
+      ".search-box:focus",
+      "/* Category Section */\n.cat-section",
+      ".cat-header",
+      ".cat-header h2",
+      ".cat-header .count",
+      ".cat-header .toggle",
+      "/* Product Grid */\n.product-grid",
+      "/* Product Card */\n.p-card",
+      ".p-card:hover",
+      ".p-card-header",
+      ".p-card-header .name",
+      ".p-card-header .price",
+      ".p-card-meta",
+      ".p-card-meta span",
+      ".p-card-meta .stars",
+      ".p-card-tags",
+      ".tag",
+      ".tag-hot",
+      ".tag-new",
+      ".tag-trend",
+      ".tag-warn",
+      "/* Detail Panel */\n.p-detail",
+      ".p-detail.show",
+      ".p-detail h4",
+      ".p-detail h4:first-child",
+      ".d-grid",
+      ".d-grid .dl",
+      ".d-grid .dv",
+      ".d-grid-3",
+      ".d-grid-3 .dl",
+      ".d-grid-3 .dv",
+      "/* Profit bar */\n.profit-bar",
+      ".profit-bar .seg",
+      ".seg-cost",
+      ".seg-fba",
+      ".seg-ref",
+      ".seg-profit",
+      "/* Pain points */\n.pain-list",
+      ".pain-list li",
+      ".opp-text",
+      "/* Footer */\n.footer",
+      "@media(max-width:768px)",
+      ".d-grid,.d-grid-3",
+      ".search-box"
+    ],
+    "classUses": {
+      "header": 1,
+      "sub": 1,
+      "date": 1,
+      "container": 1,
+      "stats-bar": 1,
+      "stat-card": 4,
+      "n": 4,
+      "l": 4,
+      "filter-bar": 1,
+      "active": 1,
+      "search-box": 1,
+      "footer": 1,
+      "cat-section": 1,
+      "cat-header": 1,
+      "count": 1,
+      "toggle": 1,
+      "product-grid": 1,
+      "tag": 1,
+      "tag-${t}": 1,
+      "dl": 23,
+      "dv": 23,
+      "p-card": 1,
+      "p-card-header": 1,
+      "name": 1,
+      "price": 1,
+      "p-card-meta": 1,
+      "stars": 1,
+      "p-card-tags": 1,
+      "p-detail": 1,
+      "d-grid-3": 4,
+      "profit-bar": 1,
+      "seg": 4,
+      "seg-cost": 1,
+      "seg-fba": 1,
+      "seg-ref": 1,
+      "seg-profit": 1,
+      "d-grid": 2,
+      "pain-list": 1,
+      "opp-text": 1
+    }
+  },
+  "events": [
+    {
+      "event": "onclick",
+      "handler": "filterCat('all',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('sports',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('water',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('garden',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('party',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('ball',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('toy',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('apparel',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('electronics',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('pet',this)"
+    },
+    {
+      "event": "onclick",
+      "handler": "filterCat('home',this)"
+    },
+    {
+      "event": "oninput",
+      "handler": "searchProducts(this.value)"
+    },
+    {
+      "event": "onclick",
+      "handler": "toggleCat('${cat}')"
+    },
+    {
+      "event": "onclick",
+      "handler": "toggleDetail(${p.id})"
+    }
+  ],
+  "functions": [
+    {
+      "name": "filterCat",
+      "args": [
+        "cat",
+        "btn"
+      ]
+    },
+    {
+      "name": "searchProducts",
+      "args": [
+        "q"
+      ]
+    },
+    {
+      "name": "toggleDetail",
+      "args": [
+        "id"
+      ]
+    },
+    {
+      "name": "toggleCat",
+      "args": [
+        "cat"
+      ]
+    },
+    {
+      "name": "renderProducts",
+      "args": []
+    },
+    {
+      "name": "renderCard",
+      "args": [
+        "p"
+      ]
+    },
+    {
+      "name": "formatNum",
+      "args": [
+        "n"
+      ]
+    }
+  ],
+  "labels": {
+    "header": {
+      "title": "美国夏季热销产品调研报告",
+      "subtitle": "100+ 产品运营数据卡 | 适合中国跨境出口",
+      "date": "调研日期: 2026年5月 | 数据来源: Amazon Best Sellers 实时采集 + 运营数据模型"
+    },
+    "stats": [
+      {
+        "value": "108",
+        "label": "产品总数"
+      },
+      {
+        "value": "10",
+        "label": "品类方向"
+      },
+      {
+        "value": "12",
+        "label": "数据维度/产品"
+      },
+      {
+        "value": "8",
+        "label": "Amazon类目"
+      }
+    ],
+    "filters": [
+      {
+        "cat": "all",
+        "label": "全部"
+      },
+      {
+        "cat": "sports",
+        "label": "运动健身"
+      },
+      {
+        "cat": "water",
+        "label": "游泳水上"
+      },
+      {
+        "cat": "garden",
+        "label": "园艺工具"
+      },
+      {
+        "cat": "party",
+        "label": "派对用品"
+      },
+      {
+        "cat": "ball",
+        "label": "球类运动"
+      },
+      {
+        "cat": "toy",
+        "label": "玩具"
+      },
+      {
+        "cat": "apparel",
+        "label": "服饰配件"
+      },
+      {
+        "cat": "electronics",
+        "label": "户外电子"
+      },
+      {
+        "cat": "pet",
+        "label": "宠物用品"
+      },
+      {
+        "cat": "home",
+        "label": "家居装饰"
+      }
+    ],
+    "searchPlaceholder": "搜索产品名称...",
+    "detailSections": [
+      "💰 利润核算",
+      "📊 销售估算",
+      "⭐ 评论分析",
+      "🔑 核心关键词 & 搜索量",
+      "📅 季节性",
+      "📋 Listing质量",
+      "⚠️ 核心痛点(差评分析)",
+      "💡 差异化机会"
+    ],
+    "footer": [
+      "美国夏季热销产品调研报告 | 2026年5月 | 100+产品运营数据卡",
+      "数据来源: Amazon.com Best Sellers | 成本数据基于1688行业均价 | 利润模型含15%佣金+标准FBA费",
+      "标注 \"估算\" 的数据建议用 Jungle Scout / Helium 10 / 卖家精灵 进一步验证"
+    ]
+  }
+}

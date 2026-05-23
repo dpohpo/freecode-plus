@@ -1,0 +1,4 @@
+interface:
+  display_name: "CC YQHSQ Operator"
+  short_description: "Bootstrap and recover cc/tmux/yqhsq."
+  default_prompt: "Use $cc-yqhsq-operator to open or recover Claude Code in tmux, switch to Opus, and start /yqhsq."

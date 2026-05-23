@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+NODE_BIN="${NODE_BIN:-}"
+if [[ -z "$NODE_BIN" ]]; then
+  NODE_BIN="$(command -v node 2>/dev/null || true)"
+fi
+if [[ -z "$NODE_BIN" || ! -x "$NODE_BIN" ]]; then
+  echo "node not found. Install Node.js or set NODE_BIN=/absolute/path/to/node." >&2
+  exit 1
+fi
+
+PROFILE_FILE="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agent-team-model-profiles.json}"
+mkdir -p "$(dirname "$PROFILE_FILE")"
+chmod 700 "$(dirname "$PROFILE_FILE")" 2>/dev/null || true
+
+if [[ -z "${DEEPSEEK_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
+  DEEPSEEK_API_KEY="$(security find-generic-password -a "$USER" -s freecode-deepseek-api-key -w 2>/dev/null || true)"
+fi
+
+if [[ -z "${ZAI_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
+  ZAI_API_KEY="$(security find-generic-password -a "$USER" -s freecode-zai-api-key -w 2>/dev/null || true)"
+fi
+
+if [[ -z "${ANTHROPIC_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
+  ANTHROPIC_API_KEY="$(security find-generic-password -a "$USER" -s freecode-anthropic-api-key -w 2>/dev/null || true)"
+fi
+
+if [[ -z "${GLM_ANTHROPIC_BASE_URL:-}" ]]; then
+  if [[ -n "${ZAI_API_KEY:-}" || -n "${GLM_ANTHROPIC_AUTH_TOKEN:-}" ]]; then
+    GLM_ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
+  else
+    GLM_ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/anthropic"
+  fi
+fi
+
+export PROFILE_FILE
+export GLM_PROFILE_TOKEN="${GLM_ANTHROPIC_AUTH_TOKEN:-${ZAI_API_KEY:-${ZHIPU_API_KEY:-}}}"
+export DEEPSEEK_PROFILE_TOKEN="${DEEPSEEK_ANTHROPIC_AUTH_TOKEN:-${DEEPSEEK_API_KEY:-}}"
+export CLAUDE_PROFILE_API_KEY="${CLAUDE_PROFILE_API_KEY:-${ANTHROPIC_API_KEY:-}}"
+export GLM_ANTHROPIC_BASE_URL
+
+"$NODE_BIN" --input-type=module --eval '
+const fs = await import("node:fs")
+const path = process.env.PROFILE_FILE
+let current = { profiles: {} }
+try {
+  current = JSON.parse(fs.readFileSync(path, "utf8"))
+  if (!current.profiles) current = { profiles: current }
+} catch {}
+
+const profiles = current.profiles || {}
+const withDefined = obj => Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== undefined && v !== ""))
+const mergeProfile = (name, defaults) => {
+  profiles[name] = { ...defaults, ...(profiles[name] || {}) }
+  for (const [key, value] of Object.entries(defaults)) {
+    if ((profiles[name][key] === undefined || profiles[name][key] === "") && value !== undefined && value !== "") {
+      profiles[name][key] = value
+    }
+  }
+}
+
+mergeProfile("glm", withDefined({
+  baseUrl: process.env.GLM_ANTHROPIC_BASE_URL,
+  authToken: process.env.GLM_PROFILE_TOKEN,
+  model: process.env.GLM_AGENT_TEAM_MODEL || "glm-5.1",
+  defaultOpusModel: process.env.GLM_AGENT_TEAM_MODEL || "glm-5.1",
+  defaultSonnetModel: process.env.GLM_AGENT_TEAM_MODEL || "glm-5.1",
+  defaultHaikuModel: process.env.GLM_AGENT_TEAM_SMALL_MODEL || "glm-4.5-air",
+  smallFastModel: process.env.GLM_AGENT_TEAM_SMALL_MODEL || "glm-4.5-air",
+  apiTimeoutMs: process.env.GLM_API_TIMEOUT_MS || "3000000",
+}))
+
+mergeProfile("deepseekvpro", withDefined({
+  baseUrl: process.env.DEEPSEEK_ANTHROPIC_BASE_URL || "https://api.deepseek.com/anthropic",
+  apiKey: process.env.DEEPSEEK_PROFILE_TOKEN,
+  model: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
+  defaultOpusModel: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
+  defaultSonnetModel: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
+  defaultHaikuModel: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
+  smallFastModel: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
+  availableModels: [
+    process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
+    process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
+    "opus",
+    "sonnet",
+    "haiku",
+  ],
+  extraEnv: {
+    ANTHROPIC_CUSTOM_MODEL_OPTION: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
+    ANTHROPIC_CUSTOM_MODEL_OPTION_NAME: "DeepSeek V4 Pro",
+    ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION: "DeepSeek V4 Pro via DeepSeek Anthropic-compatible API",
+  },
+  effortLevel: process.env.DEEPSEEK_EFFORT_LEVEL || "max",
+  apiTimeoutMs: process.env.DEEPSEEK_API_TIMEOUT_MS || "3000000",
+}))
+
+if (profiles.deepseekvpro) {
+  if (profiles.deepseekvpro.authToken && !profiles.deepseekvpro.apiKey) {
+    profiles.deepseekvpro.apiKey = profiles.deepseekvpro.authToken
+  }
+  delete profiles.deepseekvpro.authToken
+  for (const key of ["model", "defaultOpusModel", "defaultSonnetModel"]) {
+    if (profiles.deepseekvpro[key] === "deepseek-v4-pro[1m]") {
+      profiles.deepseekvpro[key] = "deepseek-v4-pro"
+    }
+  }
+  if (Array.isArray(profiles.deepseekvpro.availableModels)) {
+    profiles.deepseekvpro.availableModels = profiles.deepseekvpro.availableModels.map(model =>
+      model === "deepseek-v4-pro[1m]" ? "deepseek-v4-pro" : model
+    )
+  }
+}
+
+const claudeApiKey = process.env.CLAUDE_PROFILE_API_KEY
+mergeProfile("opus", withDefined({ model: "opus", apiKey: claudeApiKey }))
+mergeProfile("sonnet", withDefined({ model: "sonnet", apiKey: claudeApiKey }))
+mergeProfile("haiku", withDefined({ model: "haiku", apiKey: claudeApiKey }))
+
+fs.writeFileSync(path, JSON.stringify({ profiles }, null, 2) + "\n")
+fs.chmodSync(path, 0o600)
+'

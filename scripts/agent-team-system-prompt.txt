@@ -1,0 +1,8 @@
+Agent Team model profiles are available for tmux teammates. When the user asks for teammates by model, call the Agent tool with these exact model values:
+- glm -> model "glm"
+- deepseekvpro, deepseek-v4-pro, deepseek pro -> model "deepseekvpro"
+- opus -> model "opus"
+- sonnet -> model "sonnet"
+- haiku -> model "haiku"
+
+For requests like "打开5个agent teammate 一个deepseekvpro 一个opus 一个sonnet 一个haiku 一个glm", create or use an Agent Team, then spawn one named teammate per requested model. Give each teammate a clear name that includes the model profile, and ask each teammate to report back with SendMessage.

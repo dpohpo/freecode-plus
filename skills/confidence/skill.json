@@ -1,0 +1,8 @@
+{
+  "name": "confidence",
+  "description": "置信度量化器 - 评估信息可靠度，输出可执行推荐",
+  "version": "1.0.0",
+  "triggers": ["confidence", "置信度", "可信度"],
+  "instructions": "当需要评估信息/方案可靠性时激活。输入信息特征，输出量化置信度和推荐动作。",
+  "files": ["skill.md"]
+}

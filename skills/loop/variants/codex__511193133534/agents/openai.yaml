@@ -1,0 +1,3 @@
+display_name: Loop
+short_description: Triad loopback protocol for Codex, OpenCode, and CCGLM.
+default_prompt: Use the loopback scripts so each agent reports to the next agent until the run is closed.

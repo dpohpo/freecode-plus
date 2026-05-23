@@ -1,0 +1,49 @@
+{
+  "rel": "loop",
+  "primary": {
+    "rel": "loop",
+    "agent": "codex",
+    "root": "/Users/poincare/.codex/skills",
+    "path": "/Users/poincare/.codex/skills/loop",
+    "real_path": "/Users/poincare/.codex/skills/loop",
+    "skill_file": "/Users/poincare/.codex/skills/loop/SKILL.md",
+    "skill_file_name": "SKILL.md",
+    "digest": "511193133534d787cdcc9e02ba13c827010db11b8a872b3be9cd7476d60eb7bb",
+    "skill_digest": "ea2f1eb8174d7bc50aa32a09809f31578a946e3bbd54409a8fdbef685d0782a6",
+    "name": "loop",
+    "description": "Follow the local triad loopback protocol for Codex, OpenCode, and CCGLM/freeglm. Use when a message contains $loop, /loop, TRIAD_LOOPBACK_V1, or asks agents to report to the next agent until the task is closed.",
+    "file_count": 2
+  },
+  "variants": [
+    {
+      "rel": "loop",
+      "agent": "opencode",
+      "root": "/Users/poincare/.config/opencode/skills",
+      "path": "/Users/poincare/.config/opencode/skills/loop",
+      "real_path": "/Users/poincare/.config/opencode/skills/loop",
+      "skill_file": "/Users/poincare/.config/opencode/skills/loop/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "3c3247e3f93b86bf7cea3bc0c3394c3ba5e4b9c27fbe16073732c50cd1de93d9",
+      "skill_digest": "ea2f1eb8174d7bc50aa32a09809f31578a946e3bbd54409a8fdbef685d0782a6",
+      "name": "loop",
+      "description": "Follow the local triad loopback protocol for Codex, OpenCode, and CCGLM/freeglm. Use when a message contains $loop, /loop, TRIAD_LOOPBACK_V1, or asks agents to report to the next agent until the task is closed.",
+      "file_count": 1,
+      "preserved_variant": "variants/opencode__3c3247e3f93b"
+    },
+    {
+      "rel": "loop",
+      "agent": "codex",
+      "root": "/Users/poincare/.codex/skills",
+      "path": "/Users/poincare/.codex/skills/loop",
+      "real_path": "/Users/poincare/.codex/skills/loop",
+      "skill_file": "/Users/poincare/.codex/skills/loop/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "511193133534d787cdcc9e02ba13c827010db11b8a872b3be9cd7476d60eb7bb",
+      "skill_digest": "ea2f1eb8174d7bc50aa32a09809f31578a946e3bbd54409a8fdbef685d0782a6",
+      "name": "loop",
+      "description": "Follow the local triad loopback protocol for Codex, OpenCode, and CCGLM/freeglm. Use when a message contains $loop, /loop, TRIAD_LOOPBACK_V1, or asks agents to report to the next agent until the task is closed.",
+      "file_count": 2,
+      "preserved_variant": "variants/codex__511193133534"
+    }
+  ]
+}

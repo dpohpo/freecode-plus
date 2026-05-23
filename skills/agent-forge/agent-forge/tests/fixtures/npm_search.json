@@ -1,0 +1,38 @@
+{
+  "objects": [
+    {
+      "package": {
+        "name": "@playwright/mcp",
+        "description": "Model Context Protocol server for browser automation via Playwright.",
+        "version": "0.1.0",
+        "date": "2026-02-14T00:00:00.000Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/@playwright/mcp",
+          "repository": "https://github.com/microsoft/playwright"
+        }
+      },
+      "score": {
+        "detail": {
+          "popularity": 0.72
+        }
+      }
+    },
+    {
+      "package": {
+        "name": "slack-mcp",
+        "description": "Integrate the Slack Web API into agentic workflows via MCP.",
+        "version": "1.0.3",
+        "date": "2025-11-18T00:00:00.000Z",
+        "links": {
+          "npm": "https://www.npmjs.com/package/slack-mcp",
+          "repository": "https://github.com/multivariate-ai-inc/slack-mcp-server"
+        }
+      },
+      "score": {
+        "detail": {
+          "popularity": 0.15
+        }
+      }
+    }
+  ]
+}

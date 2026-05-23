@@ -1,0 +1,5 @@
+#!/bin/bash
+# saveraw wrapper - 使用虚拟环境运行
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+source "$SCRIPT_DIR/../venv/bin/activate"
+python3 "$SCRIPT_DIR/saveraw.py" "$@"

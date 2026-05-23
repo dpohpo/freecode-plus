@@ -1,0 +1,8 @@
+{
+  "name": "cynefin",
+  "description": "问题域分类器 - 基于 Cynefin 框架识别问题类型，推荐决策策略",
+  "version": "1.0.0",
+  "triggers": ["cynefin", "问题分类", "分类"],
+  "instructions": "遇到新问题时先调用，确定问题属于哪个域，选择对应策略。",
+  "files": ["skill.md"]
+}

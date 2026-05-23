@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+NODE_BIN="${NODE_BIN:-}"
+if [[ -z "$NODE_BIN" ]]; then
+  NODE_BIN="$(command -v node 2>/dev/null || true)"
+fi
+if [[ -z "$NODE_BIN" || ! -x "$NODE_BIN" ]]; then
+  echo "node not found. Install Node.js or set NODE_BIN=/absolute/path/to/node." >&2
+  exit 1
+fi
+CLI="${FREECODE_BIN:-$HOME/bin/free-code}"
+if [[ ! -x "$CLI" ]]; then
+  echo "free-code binary not found or not executable: $CLI" >&2
+  exit 1
+fi
+
+if [[ -z "${ZAI_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
+  ZAI_API_KEY="$(security find-generic-password -a "$USER" -s freecode-zai-api-key -w 2>/dev/null || true)"
+fi
+
+TOKEN="${GLM_ANTHROPIC_AUTH_TOKEN:-${ZAI_API_KEY:-${ZHIPU_API_KEY:-}}}"
+if [[ -z "$TOKEN" ]]; then
+  echo "Set ZAI_API_KEY, ZHIPU_API_KEY, or GLM_ANTHROPIC_AUTH_TOKEN before running glm-agent-team." >&2
+  exit 1
+fi
+
+SETTINGS_FILE="$(mktemp "${TMPDIR:-/tmp}/freecode-glm-agent-team.XXXXXX")"
+chmod 600 "$SETTINGS_FILE"
+trap 'rm -f "$SETTINGS_FILE"' EXIT
+
+export SETTINGS_FILE
+if [[ -z "${GLM_ANTHROPIC_BASE_URL:-}" ]]; then
+  if [[ -n "${ZAI_API_KEY:-}" || -n "${GLM_ANTHROPIC_AUTH_TOKEN:-}" ]]; then
+    GLM_ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
+  else
+    GLM_ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/anthropic"
+  fi
+fi
+export GLM_ANTHROPIC_BASE_URL
+export GLM_AGENT_TEAM_MODEL="${GLM_AGENT_TEAM_MODEL:-glm-5.1}"
+export GLM_AGENT_TEAM_SMALL_MODEL="${GLM_AGENT_TEAM_SMALL_MODEL:-glm-4.5-air}"
+export GLM_API_TIMEOUT_MS="${GLM_API_TIMEOUT_MS:-3000000}"
+export GLM_ANTHROPIC_AUTH_TOKEN="$TOKEN"
+export FREECODE_AGENT_TEAM_MODEL_PROFILES="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agent-team-model-profiles.json}"
+export FREEGLM_TEAM_LAYOUT="${FREEGLM_TEAM_LAYOUT:-grid}"
+
+"$ROOT/scripts/ensure-agent-team-profiles"
+
+"$NODE_BIN" --input-type=module --eval '
+const fs = await import("node:fs")
+const settings = {
+  env: {
+    ANTHROPIC_BASE_URL: process.env.GLM_ANTHROPIC_BASE_URL,
+    ANTHROPIC_AUTH_TOKEN: process.env.GLM_ANTHROPIC_AUTH_TOKEN,
+    ANTHROPIC_MODEL: process.env.GLM_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_SONNET_MODEL: process.env.GLM_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_OPUS_MODEL: process.env.GLM_AGENT_TEAM_MODEL,
+    ANTHROPIC_DEFAULT_HAIKU_MODEL: process.env.GLM_AGENT_TEAM_SMALL_MODEL,
+    ANTHROPIC_SMALL_FAST_MODEL: process.env.GLM_AGENT_TEAM_SMALL_MODEL,
+    CLAUDE_CODE_SUBAGENT_MODEL: process.env.GLM_AGENT_TEAM_SMALL_MODEL,
+    API_TIMEOUT_MS: process.env.GLM_API_TIMEOUT_MS,
+  },
+  teammateDefaultModel: null,
+}
+fs.writeFileSync(process.env.SETTINGS_FILE, JSON.stringify(settings, null, 2) + "\n")
+'
+
+env \
+  -u ANTHROPIC_API_KEY \
+  -u ANTHROPIC_AUTH_TOKEN \
+  -u ANTHROPIC_BASE_URL \
+  -u ANTHROPIC_MODEL \
+  FREECODE_AGENT_TEAM_MODEL_PROFILES="$FREECODE_AGENT_TEAM_MODEL_PROFILES" \
+  FREEGLM_TEAM_LAYOUT="$FREEGLM_TEAM_LAYOUT" \
+  CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 \
+  CLAUDE_CODE_TEAMMATE_COMMAND="$CLI" \
+  "$CLI" --dangerously-skip-permissions --permission-mode bypassPermissions --settings "$SETTINGS_FILE" --append-system-prompt-file "$ROOT/scripts/agent-team-system-prompt.txt" --teammate-mode tmux "$@"

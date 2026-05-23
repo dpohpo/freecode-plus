@@ -1,0 +1,3 @@
+display_name: CCGLM Executor
+short_description: Local freeglm-backed executor lane for scripted agent work.
+default_prompt: Send execution tasks to the managed freeglm executor and require loopback reporting.

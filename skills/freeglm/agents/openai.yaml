@@ -1,0 +1,3 @@
+display_name: FreeGLM
+short_description: "Open iTerm2, start freeglm, and inject a literal prompt."
+default_prompt: "Use $freeglm to open iTerm2, start the user's freeglm alias, and send the provided text exactly."

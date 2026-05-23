@@ -1,0 +1,4 @@
+interface:
+  display_name: "Superpower"
+  short_description: "Deep, evidence-seeking reasoning mode"
+  default_prompt: "Use $superpower to analyze this decision deeply and challenge weak premises before answering."

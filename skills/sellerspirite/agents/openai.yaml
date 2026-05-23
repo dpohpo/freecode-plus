@@ -1,0 +1,15 @@
+interface:
+  display_name: "SellerSprite"
+  short_description: "SellerSprite MCP/API with official parameters"
+  default_prompt: "Use $sellerspirite to research Amazon product opportunities with SellerSprite official MCP parameters."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "sellersprite-mcp"
+      description: "SellerSprite Amazon data MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.sellersprite.com/mcp"
+
+policy:
+  allow_implicit_invocation: true

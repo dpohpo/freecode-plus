@@ -1,0 +1,22 @@
+{
+  "apiKeyHelper": "security find-generic-password -a \"$USER\" -s freecode-zai-api-key -w",
+  "model": "glm-5.1",
+  "availableModels": [
+    "glm-5.1",
+    "glm-4.5-air",
+    "opus",
+    "sonnet",
+    "haiku"
+  ],
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "ANTHROPIC_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air",
+    "ANTHROPIC_SMALL_FAST_MODEL": "glm-4.5-air",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "glm-4.5-air",
+    "API_TIMEOUT_MS": "3000000"
+  },
+  "teammateDefaultModel": null
+}

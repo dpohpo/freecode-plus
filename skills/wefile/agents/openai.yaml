@@ -1,0 +1,4 @@
+interface:
+  display_name: "WeChat File Transfer"
+  short_description: "Send local files to WeChat File Transfer via GUI automation."
+  default_prompt: "Send this file to WeChat File Transfer using $wefile."

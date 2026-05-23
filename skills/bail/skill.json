@@ -1,0 +1,8 @@
+{
+  "name": "bail",
+  "description": "错误恢复协议 - BAIL流程 + 三次升级机制，防止带伤前行",
+  "version": "1.0.0",
+  "triggers": ["bail", "错误恢复", "恢复"],
+  "instructions": "执行出错时激活。提供结构化恢复流程，最多3次尝试后必须升级。",
+  "files": ["skill.md"]
+}

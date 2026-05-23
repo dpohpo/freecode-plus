@@ -1,0 +1,38 @@
+{
+  "total_count": 3,
+  "items": [
+    {
+      "name": "all-agents-mcp",
+      "full_name": "Dokkabei97/all-agents-mcp",
+      "description": "MCP server that orchestrates Claude Code, Codex, Gemini CLI, and Copilot CLI through a unified interface.",
+      "stargazers_count": 42,
+      "updated_at": "2026-02-19T12:00:00Z",
+      "html_url": "https://github.com/Dokkabei97/all-agents-mcp",
+      "language": "TypeScript",
+      "license": {"spdx_id": "MIT"},
+      "topics": ["mcp", "claude-code", "orchestration", "multi-agent"]
+    },
+    {
+      "name": "pal-mcp-server",
+      "full_name": "BeehiveInnovations/pal-mcp-server",
+      "description": "A Model Context Protocol server that connects your favorite AI tool to multiple AI models with conversation continuity.",
+      "stargazers_count": 11100,
+      "updated_at": "2026-01-15T00:00:00Z",
+      "html_url": "https://github.com/BeehiveInnovations/pal-mcp-server",
+      "language": "Python",
+      "license": {"spdx_id": "Apache-2.0"},
+      "topics": ["mcp", "multi-model", "claude", "codex", "gemini"]
+    },
+    {
+      "name": "tiny-test-repo",
+      "full_name": "nobody/tiny-test-repo",
+      "description": "A minimal test repository with no real functionality.",
+      "stargazers_count": 2,
+      "updated_at": "2024-06-01T00:00:00Z",
+      "html_url": "https://github.com/nobody/tiny-test-repo",
+      "language": "JavaScript",
+      "license": {"spdx_id": "MIT"},
+      "topics": []
+    }
+  ]
+}

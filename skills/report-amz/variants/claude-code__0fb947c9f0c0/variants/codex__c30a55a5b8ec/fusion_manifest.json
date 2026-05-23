@@ -1,0 +1,64 @@
+{
+  "rel": "report-amz",
+  "primary": {
+    "rel": "report-amz",
+    "agent": "codex",
+    "root": "/Users/poincare/.codex/skills",
+    "path": "/Users/poincare/.codex/skills/report-amz",
+    "real_path": "/Users/poincare/.agent-shared-skills/releases/20260523T021636Z/skills/report-amz",
+    "skill_file": "/Users/poincare/.agent-shared-skills/releases/20260523T021636Z/skills/report-amz/SKILL.md",
+    "skill_file_name": "SKILL.md",
+    "digest": "1e7aff788f2d543729e7ab4c7fbf705bd723897ac20a314c45ca5b7e13ce8488",
+    "skill_digest": "56242c2b4e1382dd8246dd1d6545e847fa1341b67475af992dcbb3c3c884d7f6",
+    "name": "report-amz",
+    "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+    "file_count": 40
+  },
+  "variants": [
+    {
+      "rel": "report-amz",
+      "agent": "codex",
+      "root": "/Users/poincare/.codex/skills",
+      "path": "/Users/poincare/.codex/skills/report-amz",
+      "real_path": "/Users/poincare/.agent-shared-skills/releases/20260523T021636Z/skills/report-amz",
+      "skill_file": "/Users/poincare/.agent-shared-skills/releases/20260523T021636Z/skills/report-amz/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "1e7aff788f2d543729e7ab4c7fbf705bd723897ac20a314c45ca5b7e13ce8488",
+      "skill_digest": "56242c2b4e1382dd8246dd1d6545e847fa1341b67475af992dcbb3c3c884d7f6",
+      "name": "report-amz",
+      "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+      "file_count": 40,
+      "preserved_variant": "variants/codex__1e7aff788f2d"
+    },
+    {
+      "rel": "report-amz",
+      "agent": "claude",
+      "root": "/Users/poincare/.claude/skills",
+      "path": "/Users/poincare/.claude/skills/report-amz",
+      "real_path": "/Users/poincare/.claude/skills/report-amz",
+      "skill_file": "/Users/poincare/.claude/skills/report-amz/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "3a5b55c7a843a090f74e8abdfa0bec361e5fee45632c621c37c65e3b8ea1ac47",
+      "skill_digest": "880255128f812ea5c789f7011bbf625e8ae7a006b2afbc7d70606cc3b1c2586b",
+      "name": "report-amz",
+      "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+      "file_count": 40,
+      "preserved_variant": "variants/claude__3a5b55c7a843"
+    },
+    {
+      "rel": "report-amz",
+      "agent": "opencode",
+      "root": "/Users/poincare/.config/opencode/skills",
+      "path": "/Users/poincare/.config/opencode/skills/report-amz",
+      "real_path": "/Users/poincare/.config/opencode/skills/report-amz",
+      "skill_file": "/Users/poincare/.config/opencode/skills/report-amz/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "d3bab8ac228517cdefb85dd083a7b344edc7152859fa8d8e2bbde3e24d96d811",
+      "skill_digest": "17684c8f2b2e09f33a2377bdd312a8ff1e178972b02ac5a3785b8fb4d50caf4f",
+      "name": "report-amz",
+      "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+      "file_count": 40,
+      "preserved_variant": "variants/opencode__d3bab8ac2285"
+    }
+  ]
+}

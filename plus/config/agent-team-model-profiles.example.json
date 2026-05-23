@@ -1,0 +1,46 @@
+{
+  "profiles": {
+    "glm": {
+      "model": "glm-5.1",
+      "baseUrl": "https://api.z.ai/api/anthropic",
+      "apiKeyHelper": "security find-generic-password -a \"$USER\" -s freecode-zai-api-key -w",
+      "defaultOpusModel": "glm-5.1",
+      "defaultSonnetModel": "glm-5.1",
+      "defaultHaikuModel": "glm-4.5-air",
+      "smallFastModel": "glm-4.5-air",
+      "apiTimeoutMs": "3000000"
+    },
+    "deepseekvpro": {
+      "model": "deepseek-v4-pro",
+      "baseUrl": "https://api.deepseek.com/anthropic",
+      "apiKeyHelper": "security find-generic-password -a \"$USER\" -s freecode-deepseek-api-key -w",
+      "defaultOpusModel": "deepseek-v4-pro",
+      "defaultSonnetModel": "deepseek-v4-pro",
+      "defaultHaikuModel": "deepseek-v4-flash",
+      "smallFastModel": "deepseek-v4-flash",
+      "availableModels": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash",
+        "opus",
+        "sonnet",
+        "haiku"
+      ],
+      "effortLevel": "max",
+      "apiTimeoutMs": "3000000",
+      "extraEnv": {
+        "ANTHROPIC_CUSTOM_MODEL_OPTION": "deepseek-v4-pro",
+        "ANTHROPIC_CUSTOM_MODEL_OPTION_NAME": "DeepSeek V4 Pro",
+        "ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION": "DeepSeek V4 Pro via DeepSeek Anthropic-compatible API"
+      }
+    },
+    "opus": {
+      "model": "opus"
+    },
+    "sonnet": {
+      "model": "sonnet"
+    },
+    "haiku": {
+      "model": "haiku"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# youtube2video 依赖清单
+# 安装命令: pip install -r requirements.txt
+
+# 视频下载
+yt-dlp>=2024.1.0

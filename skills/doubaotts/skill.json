@@ -1,0 +1,14 @@
+{
+  "name": "doubaotts",
+  "description": "火山引擎豆包语音 API 凭证配置指南 - 获取 ASR/TTS/ARK 凭证的完整流程",
+  "version": "1.0.0",
+  "triggers": [
+    "doubaotts",
+    "豆包语音",
+    "火山引擎语音",
+    "volcengine speech",
+    "doubao voice"
+  ],
+  "instructions": "当用户需要配置火山引擎豆包语音实时通话时，使用此 skill。包含获取 6 个凭证的完整流程：ASR_APP_ID, ASR_ACCESS_TOKEN, TTS_APP_ID, TTS_ACCESS_TOKEN, ARK_API_KEY, LLM_ENDPOINT_ID。",
+  "files": ["skill.md"]
+}

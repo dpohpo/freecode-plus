@@ -1,0 +1,26 @@
+{
+  "apiKeyHelper": "security find-generic-password -a \"$USER\" -s freecode-deepseek-api-key -w",
+  "model": "deepseek-v4-pro",
+  "availableModels": [
+    "deepseek-v4-pro",
+    "deepseek-v4-flash",
+    "opus",
+    "sonnet",
+    "haiku"
+  ],
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_SMALL_FAST_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION": "deepseek-v4-pro",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION_NAME": "DeepSeek V4 Pro",
+    "ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION": "DeepSeek V4 Pro via DeepSeek Anthropic-compatible API",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-v4-flash",
+    "CLAUDE_CODE_EFFORT_LEVEL": "max",
+    "API_TIMEOUT_MS": "3000000"
+  },
+  "teammateDefaultModel": null
+}

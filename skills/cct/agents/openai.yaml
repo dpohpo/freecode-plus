@@ -1,0 +1,4 @@
+interface:
+  display_name: "CCT"
+  short_description: "Send compiled text to the Claude Code main agent; use cc-main-send.sh for raw text."
+  default_prompt: "Use $cct to compile a 6.0B prompt and send it to the Claude Code main agent. If the user wants literal raw text, route to cc-main-send.sh instead. Preserve raw slash commands."

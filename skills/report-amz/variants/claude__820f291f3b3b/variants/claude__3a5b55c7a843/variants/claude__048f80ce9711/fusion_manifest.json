@@ -1,0 +1,49 @@
+{
+  "rel": "report-amz",
+  "primary": {
+    "rel": "report-amz",
+    "agent": "codex",
+    "root": "/Users/poincare/.codex/skills",
+    "path": "/Users/poincare/.codex/skills/report-amz",
+    "real_path": "/Users/poincare/.codex/skills/report-amz",
+    "skill_file": "/Users/poincare/.codex/skills/report-amz/SKILL.md",
+    "skill_file_name": "SKILL.md",
+    "digest": "30365a1e2dd4ca0d5b00f365ed7c3aea754b6cf7943b194a7897c2ed4c299ac9",
+    "skill_digest": "56242c2b4e1382dd8246dd1d6545e847fa1341b67475af992dcbb3c3c884d7f6",
+    "name": "report-amz",
+    "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+    "file_count": 4
+  },
+  "variants": [
+    {
+      "rel": "report-amz",
+      "agent": "codex",
+      "root": "/Users/poincare/.codex/skills",
+      "path": "/Users/poincare/.codex/skills/report-amz",
+      "real_path": "/Users/poincare/.codex/skills/report-amz",
+      "skill_file": "/Users/poincare/.codex/skills/report-amz/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "30365a1e2dd4ca0d5b00f365ed7c3aea754b6cf7943b194a7897c2ed4c299ac9",
+      "skill_digest": "56242c2b4e1382dd8246dd1d6545e847fa1341b67475af992dcbb3c3c884d7f6",
+      "name": "report-amz",
+      "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+      "file_count": 4,
+      "preserved_variant": "variants/codex__30365a1e2dd4"
+    },
+    {
+      "rel": "report-amz",
+      "agent": "opencode",
+      "root": "/Users/poincare/.config/opencode/skills",
+      "path": "/Users/poincare/.config/opencode/skills/report-amz",
+      "real_path": "/Users/poincare/.config/opencode/skills/report-amz",
+      "skill_file": "/Users/poincare/.config/opencode/skills/report-amz/SKILL.md",
+      "skill_file_name": "SKILL.md",
+      "digest": "a46f8511829446f59b0a39f5d94ecf0d26455ecafe14ef917cf2a93e4e7f1a60",
+      "skill_digest": "17684c8f2b2e09f33a2377bdd312a8ff1e178972b02ac5a3785b8fb4d50caf4f",
+      "name": "report-amz",
+      "description": "Builds Amazon research HTML reports by using jyamzon for every data-acquisition step and the US Summer Products Research 2026 frontend only for rendering. Use when the user says /report-amz, asks to combine /jyamzon crawler data with /us-summer-products-research-2026 HTML, or wants crawler-backed Amazon product reports without SellerSprite MCP.",
+      "file_count": 4,
+      "preserved_variant": "variants/opencode__a46f85118294"
+    }
+  ]
+}

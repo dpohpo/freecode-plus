@@ -1,0 +1,5442 @@
+[
+  {
+    "id": 1,
+    "cat": "sports",
+    "name": "Yoga Mat (瑜伽垫)",
+    "en": "Balance From GoYoga All-Purpose Yoga Mat",
+    "price": 19.99,
+    "range": "$13.99-$29.99",
+    "rating": 4.5,
+    "reviews": 100000,
+    "bsr": "#1 Sports",
+    "kw": [
+      "yoga mat",
+      "exercise mat",
+      "thick yoga mat",
+      "non slip yoga mat",
+      "yoga mat for women"
+    ],
+    "sv": [
+      850000,
+      420000,
+      210000,
+      180000,
+      150000
+    ],
+    "cost": 3.5,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 25000,
+    "revenue": 499750,
+    "revGrowth": 8,
+    "sellers": 25,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "pains": [
+      "太薄导致膝盖疼",
+      "卷边不贴合",
+      "有异味",
+      "防滑性不够",
+      "尺寸不够长"
+    ],
+    "improve": "加厚6mm款+天然橡胶材质+无味+对齐线设计",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 2,
+    "cat": "sports",
+    "name": "Hex Dumbbell (六角哑铃)",
+    "en": "Amazon Basics Rubber Encased Hex Dumbbell",
+    "price": 34.99,
+    "range": "$17.49-$339.99",
+    "rating": 4.6,
+    "reviews": 75000,
+    "bsr": "#2 Sports",
+    "kw": [
+      "dumbbell",
+      "hex dumbbell",
+      "rubber dumbbell",
+      "weight set",
+      "free weights"
+    ],
+    "sv": [
+      550000,
+      320000,
+      180000,
+      210000,
+      160000
+    ],
+    "cost": 8,
+    "fba": 6.5,
+    "refRate": 15,
+    "margin": 38,
+    "sales": 15000,
+    "revenue": 524850,
+    "revGrowth": 6,
+    "sellers": 12,
+    "amazSelf": true,
+    "season": "全年,1月/夏季峰值",
+    "peakMon": "1月,5-8月",
+    "imgs": 8,
+    "aplus": true,
+    "video": true,
+    "pains": [
+      "橡胶味大",
+      "重量不准",
+      "生锈",
+      "包装破损"
+    ],
+    "improve": "无味环保橡胶+精确重量校验+防锈处理+加固包装",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 3,
+    "cat": "sports",
+    "name": "Resistance Bands (弹力带)",
+    "en": "Fit Simplify Resistance Loop Bands",
+    "price": 11.95,
+    "range": "$9.95-$14.95",
+    "rating": 4.4,
+    "reviews": 95000,
+    "bsr": "#3 Sports",
+    "kw": [
+      "resistance bands",
+      "loop bands",
+      "exercise bands",
+      "workout bands",
+      "pull up bands"
+    ],
+    "sv": [
+      720000,
+      380000,
+      290000,
+      220000,
+      150000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 68,
+    "sales": 30000,
+    "revenue": 358500,
+    "revGrowth": 10,
+    "sellers": 35,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "pains": [
+      "容易断裂",
+      "弹性不持久",
+      "太紧/太松",
+      "有异味",
+      "尺寸标注不清"
+    ],
+    "improve": "天然乳胶+5级阻力标注+加厚设计+收纳袋+使用教程",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 4,
+    "cat": "sports",
+    "name": "Jump Rope (跳绳)",
+    "en": "Adjustable Speed Jump Rope",
+    "price": 9.99,
+    "range": "$7.99-$12.99",
+    "rating": 4.5,
+    "reviews": 40000,
+    "bsr": "Top 10 Sports",
+    "kw": [
+      "jump rope",
+      "speed rope",
+      "skipping rope",
+      "weighted jump rope",
+      "crossfit rope"
+    ],
+    "sv": [
+      380000,
+      180000,
+      120000,
+      95000,
+      68000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 20000,
+    "revenue": 199800,
+    "revGrowth": 12,
+    "sellers": 28,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": false,
+    "video": true,
+    "pains": [
+      "绳长不好调",
+      "手柄打滑",
+      "轴承卡顿",
+      "绳子打结",
+      "计数不准"
+    ],
+    "improve": "轴承+钢丝绳+防滑手柄+快速调节+LED计数器",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 5,
+    "cat": "sports",
+    "name": "Weighted Vest (负重背心)",
+    "en": "CAP Barbell Adjustable Weighted Vest",
+    "price": 42.99,
+    "range": "$28.99-$64.99",
+    "rating": 4.4,
+    "reviews": 25000,
+    "bsr": "Top 15 Sports",
+    "kw": [
+      "weighted vest",
+      "weight vest",
+      "workout vest",
+      "running vest",
+      "body weight training"
+    ],
+    "sv": [
+      280000,
+      220000,
+      95000,
+      85000,
+      62000
+    ],
+    "cost": 8,
+    "fba": 5.89,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 8000,
+    "revenue": 343920,
+    "revGrowth": 15,
+    "sellers": 18,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "pains": [
+      "太重不舒服",
+      "肩带勒人",
+      "配重块滑动",
+      "尺码不准",
+      "不透气"
+    ],
+    "improve": "可调节重量+透气网面+可调节肩带+反光条",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 6,
+    "cat": "sports",
+    "name": "Yoga Block (瑜伽砖)",
+    "en": "Amazon Basics High-Density Foam Yoga Block",
+    "price": 11.98,
+    "range": "$9.98-$14.98",
+    "rating": 4.7,
+    "reviews": 35000,
+    "bsr": "Top 20 Sports",
+    "kw": [
+      "yoga block",
+      "foam block",
+      "yoga prop",
+      "stretching block",
+      "pilates block"
+    ],
+    "sv": [
+      180000,
+      95000,
+      72000,
+      58000,
+      48000
+    ],
+    "cost": 1.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 18000,
+    "revenue": 215640,
+    "revGrowth": 7,
+    "sellers": 22,
+    "amazSelf": true,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "pains": [
+      "太硬",
+      "太滑",
+      "容易有压痕",
+      "掉屑",
+      "尺寸偏小"
+    ],
+    "improve": "EVA环保泡沫+防滑纹理+两面硬度不同+圆角设计",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 7,
+    "cat": "sports",
+    "name": "Workout Gloves (健身手套)",
+    "en": "Trideer Padded Workout Gloves",
+    "price": 12.99,
+    "range": "$10.99-$16.99",
+    "rating": 4.3,
+    "reviews": 30000,
+    "bsr": "Top 25 Sports",
+    "kw": [
+      "workout gloves",
+      "lifting gloves",
+      "gym gloves",
+      "weightlifting gloves",
+      "crossfit gloves"
+    ],
+    "sv": [
+      250000,
+      180000,
+      140000,
+      120000,
+      85000
+    ],
+    "cost": 2.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 15000,
+    "revenue": 194850,
+    "revGrowth": 9,
+    "sellers": 30,
+    "amazSelf": false,
+    "season": "全年,夏季户外",
+    "peakMon": "5-9月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "pains": [
+      "手掌垫太薄",
+      "手指部分太紧",
+      "透气性差",
+      "魔术贴不牢",
+      "尺寸偏小"
+    ],
+    "improve": "加厚掌垫+透气网面+LEO魔术贴+尺码表优化",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 8,
+    "cat": "sports",
+    "name": "Foam Roller (泡沫轴)",
+    "en": "High-Density Foam Roller for Muscle Recovery",
+    "price": 13.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.5,
+    "reviews": 32000,
+    "bsr": "Top 30 Sports",
+    "kw": [
+      "foam roller",
+      "muscle roller",
+      "back roller",
+      "massage roller",
+      "physical therapy roller"
+    ],
+    "sv": [
+      320000,
+      150000,
+      120000,
+      98000,
+      75000
+    ],
+    "cost": 2.5,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 12000,
+    "revenue": 167880,
+    "revGrowth": 8,
+    "sellers": 25,
+    "amazSelf": false,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "pains": [
+      "太硬导致淤青",
+      "容易变形",
+      "表面纹理太粗糙",
+      "太短不够用",
+      "有化学味"
+    ],
+    "improve": "多密度分区+EVA材质+合适硬度+无味",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 9,
+    "cat": "sports",
+    "name": "Ab Roller (腹肌轮)",
+    "en": "Fitness Ab Roller Wheel",
+    "price": 18.99,
+    "range": "$14.99-$24.99",
+    "rating": 4.4,
+    "reviews": 22000,
+    "bsr": "Top 35 Sports",
+    "kw": [
+      "ab roller",
+      "ab wheel",
+      "core roller",
+      "abdominal roller",
+      "stomach roller"
+    ],
+    "sv": [
+      210000,
+      150000,
+      68000,
+      58000,
+      48000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 10000,
+    "revenue": 189900,
+    "revGrowth": 11,
+    "sellers": 22,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "pains": [
+      "轮子打滑",
+      "膝盖垫太小",
+      "手柄不舒服",
+      "回弹力不够",
+      "噪音大"
+    ],
+    "improve": "加宽双轮+回弹设计+加厚膝盖垫+防滑橡胶+静音轴承",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 10,
+    "cat": "sports",
+    "name": "Pull-Up Bar (引体向上杆)",
+    "en": "Doorway Pull-Up Bar",
+    "price": 29.99,
+    "range": "$22.99-$39.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 40 Sports",
+    "kw": [
+      "pull up bar",
+      "chin up bar",
+      "doorway pull up bar",
+      "home gym bar",
+      "upper body bar"
+    ],
+    "sv": [
+      280000,
+      120000,
+      150000,
+      95000,
+      72000
+    ],
+    "cost": 6,
+    "fba": 5.19,
+    "refRate": 15,
+    "margin": 42,
+    "sales": 8000,
+    "revenue": 239920,
+    "revGrowth": 7,
+    "sellers": 20,
+    "amazSelf": false,
+    "season": "全年,夏季峰值",
+    "peakMon": "1月,5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "pains": [
+      "刮伤门框",
+      "安装不稳",
+      "泡棉手柄脱落",
+      "承重不够",
+      "门框适配问题"
+    ],
+    "improve": "多点接触+加厚保护垫+防滑手柄+通用适配+250磅承重",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 11,
+    "cat": "sports",
+    "name": "Agility Ladder (敏捷梯)",
+    "en": "Sports Agility Ladder Speed Training",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.3,
+    "reviews": 15000,
+    "bsr": "Top 50 Sports",
+    "kw": [
+      "agility ladder",
+      "speed ladder",
+      "training ladder",
+      "footwork ladder",
+      "soccer training equipment"
+    ],
+    "sv": [
+      120000,
+      85000,
+      65000,
+      42000,
+      95000
+    ],
+    "cost": 1.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 10000,
+    "revenue": 99900,
+    "revGrowth": 14,
+    "sellers": 25,
+    "amazSelf": false,
+    "season": "夏季为主",
+    "peakMon": "4-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "pains": [
+      "横杆容易移位",
+      "地钉不够长",
+      "塑料扣断裂",
+      "携带不便",
+      "长度不够"
+    ],
+    "improve": "固定扣设计+加长地钉+收纳袋+12-20rung可选",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 12,
+    "cat": "sports",
+    "name": "Hand Gripper (握力器)",
+    "en": "Adjustable Hand Grip Strengthener",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.4,
+    "reviews": 18000,
+    "bsr": "Top 45 Sports",
+    "kw": [
+      "hand gripper",
+      "grip strengthener",
+      "forearm exerciser",
+      "hand exerciser",
+      "grip trainer"
+    ],
+    "sv": [
+      180000,
+      95000,
+      72000,
+      85000,
+      68000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 12000,
+    "revenue": 119880,
+    "revGrowth": 10,
+    "sellers": 30,
+    "amazSelf": false,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "pains": [
+      "弹簧力不够",
+      "调节不精准",
+      "手柄硌手",
+      "容易坏",
+      "塑料件断裂"
+    ],
+    "improve": "10-60kg可调+人体工学手柄+金属材质+计数功能",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 13,
+    "cat": "water",
+    "name": "Swim Goggles (泳镜)",
+    "en": "Speedo Vanquisher 2.0 Swim Goggle",
+    "price": 16.99,
+    "range": "$14.99-$22.00",
+    "rating": 4.5,
+    "reviews": 30000,
+    "bsr": "Top 30 Sports",
+    "kw": [
+      "swim goggles",
+      "swimming goggles",
+      "anti fog goggles",
+      "pool goggles",
+      "kids swim goggles"
+    ],
+    "sv": [
+      450000,
+      380000,
+      180000,
+      150000,
+      120000
+    ],
+    "cost": 2.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 18000,
+    "revenue": 305820,
+    "revGrowth": 25,
+    "season": "夏季爆发,6-8月",
+    "peakMon": "6-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "起雾严重",
+      "勒头带太紧",
+      "漏水",
+      "视野窄",
+      "镜片容易刮花"
+    ],
+    "improve": "防雾涂层+硅胶密封+可调节带+广角镜片+防刮涂层",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 14,
+    "cat": "water",
+    "name": "Pool Floats (充气浮排)",
+    "en": "Intex Inflatable Pool Floats",
+    "price": 18.99,
+    "range": "$9.99-$39.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 20 Toys",
+    "kw": [
+      "pool float",
+      "pool floats for adults",
+      "inflatable pool float",
+      "swim ring",
+      "pool lounger"
+    ],
+    "sv": [
+      520000,
+      380000,
+      220000,
+      150000,
+      180000
+    ],
+    "cost": 3,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 25000,
+    "revenue": 474750,
+    "revGrowth": 40,
+    "season": "夏季爆发,5-8月",
+    "peakMon": "6-7月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "容易漏气",
+      "材质有味",
+      "充气慢",
+      "放气难",
+      "承载不够"
+    ],
+    "improve": "加厚PVC+快速充气阀+多重气室+趣味造型+300磅承重",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 15,
+    "cat": "water",
+    "name": "Baby Pool (充气戏水池)",
+    "en": "Intex Sunset Glow Baby Pool",
+    "price": 15.99,
+    "range": "$12.99-$19.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 25 Toys",
+    "kw": [
+      "baby pool",
+      "kiddie pool",
+      "inflatable pool",
+      "kids pool",
+      "small pool"
+    ],
+    "sv": [
+      320000,
+      180000,
+      280000,
+      150000,
+      120000
+    ],
+    "cost": 2.5,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 15000,
+    "revenue": 239850,
+    "revGrowth": 35,
+    "season": "夏季爆发,5-8月",
+    "peakMon": "6-7月",
+    "imgs": 6,
+    "aplus": false,
+    "video": false,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "底部太薄",
+      "容易破",
+      "充气口漏气",
+      "太小",
+      "没有遮阳"
+    ],
+    "improve": [
+      "加厚底部0.4mm+UPF50+遮阳篷+排水口+多气室"
+    ],
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 16,
+    "cat": "water",
+    "name": "Water Balloons (水气球)",
+    "en": "Bunch O Balloons Instant Water Balloons",
+    "price": 12.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.3,
+    "reviews": 25000,
+    "bsr": "Top 15 Toys",
+    "kw": [
+      "water balloons",
+      "water balloons quick fill",
+      "bunch o balloons",
+      "water balloon",
+      "water bombs"
+    ],
+    "sv": [
+      280000,
+      120000,
+      95000,
+      250000,
+      85000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 20000,
+    "revenue": 259800,
+    "revGrowth": 30,
+    "season": "夏季爆发,6-8月",
+    "peakMon": "6-7月",
+    "imgs": 5,
+    "aplus": true,
+    "video": true,
+    "sellers": 15,
+    "amazSelf": false,
+    "pains": [
+      "有气球破了",
+      "颜色不够鲜艳",
+      "太小",
+      "不容易绑",
+      "填充慢"
+    ],
+    "improve": "加厚乳胶+自封设计+多色组合+快速填充连接器",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 17,
+    "cat": "water",
+    "name": "Swim Cap (泳帽)",
+    "en": "Silicone Swim Cap for Men Women",
+    "price": 8.99,
+    "range": "$6.99-$12.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 50 Sports",
+    "kw": [
+      "swim cap",
+      "swimming cap",
+      "silicone swim cap",
+      "waterproof swim cap",
+      "long hair swim cap"
+    ],
+    "sv": [
+      180000,
+      150000,
+      120000,
+      85000,
+      95000
+    ],
+    "cost": 0.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 64,
+    "sales": 12000,
+    "revenue": 107880,
+    "revGrowth": 20,
+    "season": "夏季高峰",
+    "peakMon": "6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 35,
+    "amazSelf": false,
+    "pains": [
+      "太紧头疼",
+      "容易撕裂",
+      "不防水",
+      "掉发",
+      "长发装不下"
+    ],
+    "improve": "弹性硅胶+长发专用设计+防滑纹理+多色可选",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 18,
+    "cat": "water",
+    "name": "Waterproof Phone Case (防水手机袋)",
+    "en": "Universal Waterproof Phone Pouch",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 60 Sports",
+    "kw": [
+      "waterproof phone case",
+      "phone pouch",
+      "dry bag phone",
+      "waterproof pouch",
+      "beach phone case"
+    ],
+    "sv": [
+      150000,
+      120000,
+      85000,
+      95000,
+      85000
+    ],
+    "cost": 0.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 15000,
+    "revenue": 119850,
+    "revGrowth": 18,
+    "season": "夏季高峰",
+    "peakMon": "6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "触屏不灵敏",
+      "密封不严",
+      "挂绳太细",
+      "尺寸不合适",
+      "有雾气"
+    ],
+    "improve": "IPX8认证+TPU触屏+双重密封+可调挂绳+通用尺寸",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 19,
+    "cat": "water",
+    "name": "Beach Towel (沙滩巾)",
+    "en": "Extra Large Microfiber Beach Towel",
+    "price": 15.99,
+    "range": "$12.99-$22.99",
+    "rating": 4.4,
+    "reviews": 25000,
+    "bsr": "Top 40 Sports",
+    "kw": [
+      "beach towel",
+      "microfiber towel",
+      "travel towel",
+      "sand free beach towel",
+      "oversized beach towel"
+    ],
+    "sv": [
+      320000,
+      180000,
+      150000,
+      85000,
+      95000
+    ],
+    "cost": 2.5,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 14000,
+    "revenue": 223860,
+    "revGrowth": 22,
+    "season": "夏季高峰",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "不够大",
+      "掉色",
+      "吸水不好",
+      "沙子粘",
+      "干得慢"
+    ],
+    "improve": "加大70x35in+速干微纤维+防沙+不褪色印花+收纳袋",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 20,
+    "cat": "water",
+    "name": "Snorkel Set (浮潜套装)",
+    "en": "Panoramic View Snorkel Mask Full Face",
+    "price": 24.99,
+    "range": "$19.99-$34.99",
+    "rating": 4.3,
+    "reviews": 15000,
+    "bsr": "Top 55 Sports",
+    "kw": [
+      "snorkel mask",
+      "snorkel set",
+      "full face snorkel",
+      "diving mask",
+      "snorkel gear"
+    ],
+    "sv": [
+      180000,
+      120000,
+      150000,
+      85000,
+      95000
+    ],
+    "cost": 5,
+    "fba": 3.77,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 8000,
+    "revenue": 199920,
+    "revGrowth": 20,
+    "season": "夏季高峰",
+    "peakMon": "6-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "起雾",
+      "漏水",
+      "呼吸不畅",
+      "勒脸",
+      "吸管进水"
+    ],
+    "improve": "全脸设计+防雾风扇+硅胶密封+排水阀+GoPro支架",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 21,
+    "cat": "water",
+    "name": "Water Gun (水枪)",
+    "en": "High Pressure Water Gun Blaster",
+    "price": 14.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.3,
+    "reviews": 12000,
+    "bsr": "Top 30 Toys",
+    "kw": [
+      "water gun",
+      "water blaster",
+      "super soaker",
+      "squirt gun",
+      "pool toys"
+    ],
+    "sv": [
+      220000,
+      150000,
+      85000,
+      120000,
+      180000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 12000,
+    "revenue": 179880,
+    "revGrowth": 35,
+    "season": "夏季爆发",
+    "peakMon": "6-7月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "射程不够",
+      "容易坏",
+      "漏水",
+      "装水少",
+      "不好握"
+    ],
+    "improve": "远射30ft+大容量500ml+防漏密封+人体工学握把",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 22,
+    "cat": "water",
+    "name": "Life Jacket (儿童救生衣)",
+    "en": "Puddle Jumper Kids Life Jacket",
+    "price": 19.99,
+    "range": "$17.99-$24.99",
+    "rating": 4.7,
+    "reviews": 30000,
+    "bsr": "Top 20 Sports",
+    "kw": [
+      "life jacket",
+      "kids life jacket",
+      "puddle jumper",
+      "swim vest",
+      "floatation device"
+    ],
+    "sv": [
+      180000,
+      120000,
+      95000,
+      85000,
+      65000
+    ],
+    "cost": 4,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 12000,
+    "revenue": 239880,
+    "revGrowth": 15,
+    "season": "夏季高峰",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 15,
+    "amazSelf": false,
+    "pains": [
+      "尺码不准",
+      "卡扣难扣",
+      "孩子不喜欢穿",
+      "有化学味",
+      "不够浮"
+    ],
+    "improve": "USCG认证+可爱动物造型+快干面料+精准尺码",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 23,
+    "cat": "water",
+    "name": "Pool Noodle (游泳池面条)",
+    "en": "Swim Pool Noodle Foam Float",
+    "price": 14.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.4,
+    "reviews": 10000,
+    "bsr": "Top 35 Toys",
+    "kw": [
+      "pool noodle",
+      "swim noodle",
+      "pool float noodle",
+      "water noodle",
+      "foam pool noodle"
+    ],
+    "sv": [
+      95000,
+      68000,
+      52000,
+      48000,
+      42000
+    ],
+    "cost": 1.5,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 10000,
+    "revenue": 149900,
+    "revGrowth": 25,
+    "season": "夏季",
+    "peakMon": "6-7月",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "太短",
+      "容易被咬",
+      "颜色褪色",
+      "不够浮",
+      "材质有味"
+    ],
+    "improve": "加长60in+XPE泡沫+多色6条装+高密度",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 24,
+    "cat": "garden",
+    "name": "Garden Hose (花园水管)",
+    "en": "Flexzilla Garden Hose",
+    "price": 44.97,
+    "range": "$29.97-$79.97",
+    "rating": 4.6,
+    "reviews": 80000,
+    "bsr": "#1 Patio",
+    "kw": [
+      "garden hose",
+      "water hose",
+      "expandable garden hose",
+      "hose reel",
+      "flexible hose"
+    ],
+    "sv": [
+      420000,
+      280000,
+      250000,
+      120000,
+      95000
+    ],
+    "cost": 6,
+    "fba": 5.19,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 20000,
+    "revenue": 899400,
+    "revGrowth": 10,
+    "season": "春夏季高峰",
+    "peakMon": "4-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": true,
+    "pains": [
+      "接头漏水",
+      "打结",
+      "冬天硬化",
+      "太重",
+      "不耐晒"
+    ],
+    "improve": "1/2in接头+防漏密封圈+可伸缩+轻量化+UV抗晒",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 25,
+    "cat": "garden",
+    "name": "Hose Nozzle (水管喷头)",
+    "en": "Garden Hose Nozzle Sprayer",
+    "price": 11.99,
+    "range": "$8.99-$15.99",
+    "rating": 4.4,
+    "reviews": 40000,
+    "bsr": "Top 5 Patio",
+    "kw": [
+      "hose nozzle",
+      "garden nozzle",
+      "sprayer nozzle",
+      "water nozzle",
+      "hose sprayer"
+    ],
+    "sv": [
+      180000,
+      95000,
+      85000,
+      120000,
+      85000
+    ],
+    "cost": 2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 18000,
+    "revenue": 215820,
+    "revGrowth": 12,
+    "season": "春夏季高峰",
+    "peakMon": "4-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "漏水",
+      "塑料易断",
+      "模式少",
+      "手柄滑",
+      "锈蚀"
+    ],
+    "improve": "金属主体+10模式+防滑握把+防漏垫圈+不锈蚀",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 26,
+    "cat": "garden",
+    "name": "Weed Puller (站立式除草器)",
+    "en": "Grampa's Weeder Stand-Up Weed Puller",
+    "price": 34.99,
+    "range": "$29.99-$39.99",
+    "rating": 4.5,
+    "reviews": 25000,
+    "bsr": "Top 10 Patio",
+    "kw": [
+      "weed puller",
+      "weeder tool",
+      "stand up weed puller",
+      "weed remover",
+      "garden weeder"
+    ],
+    "sv": [
+      120000,
+      85000,
+      95000,
+      68000,
+      62000
+    ],
+    "cost": 5,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 8000,
+    "revenue": 279920,
+    "revGrowth": 8,
+    "season": "春夏",
+    "peakMon": "3-7月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 12,
+    "amazSelf": false,
+    "pains": [
+      "根部拔不干净",
+      "钢材弯了",
+      "手柄不结实",
+      "不够长",
+      "弹簧松了"
+    ],
+    "improve": "4爪设计+加厚钢材+45in加长+强化弹簧+舒适握把",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 27,
+    "cat": "garden",
+    "name": "Landscape Staples (地钉)",
+    "en": "Landscape Staples/Garden Stakes",
+    "price": 12.99,
+    "range": "$9.99-$18.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 15 Patio",
+    "kw": [
+      "landscape staples",
+      "garden stakes",
+      "landscape pins",
+      "ground stakes",
+      "weed barrier stakes"
+    ],
+    "sv": [
+      85000,
+      68000,
+      52000,
+      48000,
+      42000
+    ],
+    "cost": 1.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 10000,
+    "revenue": 129900,
+    "revGrowth": 6,
+    "season": "春夏",
+    "peakMon": "3-7月",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "生锈",
+      "太软弯了",
+      "太短",
+      "数量不够",
+      "太尖危险"
+    ],
+    "improve": "镀锌防锈+11in加长+加厚4mm+100包装+圆头安全设计",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 28,
+    "cat": "garden",
+    "name": "Cooling Dog Mat (宠物自冷垫)",
+    "en": "Cooling Mat for Dogs",
+    "price": 19.99,
+    "range": "$15.99-$29.99",
+    "rating": 4.2,
+    "reviews": 20000,
+    "bsr": "Top 20 Patio",
+    "kw": [
+      "cooling mat for dogs",
+      "dog cooling pad",
+      "pet cooling mat",
+      "self cooling mat",
+      "dog mat"
+    ],
+    "sv": [
+      180000,
+      150000,
+      120000,
+      85000,
+      95000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 12000,
+    "revenue": 239880,
+    "revGrowth": 25,
+    "season": "夏季爆发",
+    "peakMon": "6-8月",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "不凉了",
+      "被狗抓破",
+      "太小",
+      "有味道",
+      "漏水"
+    ],
+    "improve": "凝胶自冷+加厚防抓面料+多尺寸+防水拉链+可折叠",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 29,
+    "cat": "garden",
+    "name": "Pruning Shears (修枝剪)",
+    "en": "Professional Bypass Pruning Shears",
+    "price": 12.99,
+    "range": "$8.99-$18.99",
+    "rating": 4.5,
+    "reviews": 20000,
+    "bsr": "Top 25 Patio",
+    "kw": [
+      "pruning shears",
+      "garden scissors",
+      "hand pruner",
+      "bypass pruner",
+      "tree trimmer"
+    ],
+    "sv": [
+      120000,
+      85000,
+      95000,
+      68000,
+      52000
+    ],
+    "cost": 2.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 10000,
+    "revenue": 129900,
+    "revGrowth": 7,
+    "season": "春夏",
+    "peakMon": "3-7月",
+    "imgs": 6,
+    "aplus": false,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "不够锋利",
+      "弹簧松了",
+      "手柄不舒服",
+      "锁扣不好用",
+      "生锈"
+    ],
+    "improve": "SK5高碳钢+弹簧自开+人体工学握把+安全锁扣+防锈涂层",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 30,
+    "cat": "garden",
+    "name": "Garden Gloves (园艺手套)",
+    "en": "Puncture Resistant Garden Gloves",
+    "price": 8.99,
+    "range": "$6.99-$12.99",
+    "rating": 4.4,
+    "reviews": 25000,
+    "bsr": "Top 30 Patio",
+    "kw": [
+      "garden gloves",
+      "gardening gloves",
+      "work gloves",
+      "thorn proof gloves",
+      "planting gloves"
+    ],
+    "sv": [
+      150000,
+      120000,
+      180000,
+      68000,
+      52000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 14000,
+    "revenue": 125860,
+    "revGrowth": 8,
+    "season": "春夏",
+    "peakMon": "3-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "指尖不防刺",
+      "透气性差",
+      "尺码不准",
+      "容易磨损",
+      "不防水"
+    ],
+    "improve": [
+      "丁腈涂层+竹林防刺+透气+精准尺码"
+    ],
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 31,
+    "cat": "garden",
+    "name": "Solar Garden Lights (太阳能庭院灯)",
+    "en": "Solar Powered Garden Path Lights",
+    "price": 15.99,
+    "range": "$12.99-$24.99",
+    "rating": 4.2,
+    "reviews": 20000,
+    "bsr": "Top 35 Patio",
+    "kw": [
+      "solar garden lights",
+      "solar pathway lights",
+      "outdoor solar lights",
+      "landscape lighting",
+      "solar yard lights"
+    ],
+    "sv": [
+      280000,
+      150000,
+      220000,
+      120000,
+      95000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 12000,
+    "revenue": 191880,
+    "revGrowth": 15,
+    "season": "春夏安装高峰",
+    "peakMon": "4-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "亮度不够",
+      "不防水",
+      "灯罩发黄",
+      "电池衰减快",
+      "安装不稳"
+    ],
+    "improve": "LED 15流明+IP65防水+不锈钢+600mAh电池+插地式",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 32,
+    "cat": "garden",
+    "name": "Bird Feeder (鸟类喂食器)",
+    "en": "Squirrel Proof Bird Feeder",
+    "price": 16.99,
+    "range": "$12.99-$24.99",
+    "rating": 4.5,
+    "reviews": 20000,
+    "bsr": "Top 40 Patio",
+    "kw": [
+      "bird feeder",
+      "squirrel proof bird feeder",
+      "hummingbird feeder",
+      "bird feeders for outside",
+      "wild bird feeder"
+    ],
+    "sv": [
+      220000,
+      85000,
+      180000,
+      150000,
+      95000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 10000,
+    "revenue": 169900,
+    "revGrowth": 8,
+    "season": "全年,冬季高峰但夏季也热卖",
+    "peakMon": "全年",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "松鼠抢食",
+      "种子发霉",
+      "不好清洗",
+      "容量太小",
+      "容易被风刮倒"
+    ],
+    "improve": "防松鼠笼+360度取食+可拆洗+大容量2L+防雨顶盖",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 33,
+    "cat": "garden",
+    "name": "Garden Kneeler (园艺跪凳)",
+    "en": "Garden Kneeler and Seat Bench",
+    "price": 29.99,
+    "range": "$24.99-$39.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 45 Patio",
+    "kw": [
+      "garden kneeler",
+      "garden seat",
+      "kneeling pad",
+      "garden bench",
+      "garden kneeler seat"
+    ],
+    "sv": [
+      95000,
+      68000,
+      120000,
+      52000,
+      52000
+    ],
+    "cost": 5,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 6000,
+    "revenue": 179940,
+    "revGrowth": 10,
+    "season": "春夏",
+    "peakMon": "4-7月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "不够稳",
+      "坐垫太薄",
+      "折叠不顺畅",
+      "承重不够",
+      "容易生锈"
+    ],
+    "improve": "加厚坐垫+钢管支撑300磅+折叠便携+工具袋+防锈",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 34,
+    "cat": "party",
+    "name": "Latex Balloons (乳胶气球)",
+    "en": "Party Balloons 100-Pack Latex",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.4,
+    "reviews": 50000,
+    "bsr": "#1 Toys",
+    "kw": [
+      "latex balloons",
+      "party balloons",
+      "balloons",
+      "birthday balloons",
+      "balloon arch"
+    ],
+    "sv": [
+      520000,
+      380000,
+      850000,
+      220000,
+      320000
+    ],
+    "cost": 0.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 65,
+    "sales": 35000,
+    "revenue": 349650,
+    "revGrowth": 15,
+    "season": "全年,夏季派对季高峰",
+    "peakMon": "6-8月,12月",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 35,
+    "amazSelf": false,
+    "pains": [
+      "有气球破了",
+      "颜色不均匀",
+      "有异味",
+      "大小不一",
+      "不好打结"
+    ],
+    "improve": "加厚天然乳胶+100颗多色+充气后12in一致+无味+气球打结器",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 35,
+    "cat": "party",
+    "name": "Glow Sticks (荧光棒)",
+    "en": "Glow Sticks Party Supplies 100-Pack",
+    "price": 12.99,
+    "range": "$9.99-$17.99",
+    "rating": 4.5,
+    "reviews": 35000,
+    "bsr": "Top 5 Toys",
+    "kw": [
+      "glow sticks",
+      "glow in the dark sticks",
+      "party favors",
+      "neon party supplies",
+      "glow party"
+    ],
+    "sv": [
+      180000,
+      95000,
+      220000,
+      85000,
+      68000
+    ],
+    "cost": 1.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 20000,
+    "revenue": 259800,
+    "revGrowth": 20,
+    "season": "夏季+万圣节高峰",
+    "peakMon": "6-8月,10月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "亮度不够久",
+      "连接器断裂",
+      "颜色暗",
+      "不够亮",
+      "液体泄漏"
+    ],
+    "improve": "8-12小时持续发光+100根装+连接器+手环+项链套装",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 36,
+    "cat": "party",
+    "name": "Electric Balloon Pump (电动气球泵)",
+    "en": "Electric Balloon Pump for Party",
+    "price": 18.99,
+    "range": "$15.99-$24.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 10 Toys",
+    "kw": [
+      "balloon pump",
+      "electric balloon pump",
+      "balloon inflater",
+      "party pump",
+      "balloon blower"
+    ],
+    "sv": [
+      120000,
+      180000,
+      85000,
+      68000,
+      52000
+    ],
+    "cost": 4,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 12000,
+    "revenue": 227880,
+    "revGrowth": 18,
+    "season": "全年,派对季高峰",
+    "peakMon": "6-8月,12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "噪音大",
+      "容易过热",
+      "吸力不够",
+      "气管脱落",
+      "用几次就坏"
+    ],
+    "improve": "静音电机+双孔+600W大功率+散热+2种气管+丝带打结器",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 37,
+    "cat": "party",
+    "name": "LED Strip Lights (LED灯带)",
+    "en": "DAYBETTER LED Strip Lights 32.8ft",
+    "price": 12.99,
+    "range": "$9.99-$16.99",
+    "rating": 4.3,
+    "reviews": 40000,
+    "bsr": "#2 Home Improvement",
+    "kw": [
+      "led strip lights",
+      "rgb led strip",
+      "color changing lights",
+      "led lights for bedroom",
+      "smart led strip"
+    ],
+    "sv": [
+      650000,
+      280000,
+      320000,
+      250000,
+      180000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 25000,
+    "revenue": 324750,
+    "revGrowth": 10,
+    "season": "全年",
+    "peakMon": "全年均匀,11-12月高峰",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "粘胶不牢",
+      "遥控不灵敏",
+      "颜色不准",
+      "容易断",
+      "APP连接难"
+    ],
+    "improve": "3M背胶+44键遥控+APP控制+音乐同步+可剪切",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 38,
+    "cat": "party",
+    "name": "String Lights (串灯)",
+    "en": "Fairy String Lights 33ft 100 LEDs",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.5,
+    "reviews": 30000,
+    "bsr": "Top 10 Home",
+    "kw": [
+      "string lights",
+      "fairy lights",
+      "outdoor string lights",
+      "christmas lights",
+      "led string lights"
+    ],
+    "sv": [
+      520000,
+      320000,
+      380000,
+      280000,
+      220000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 20000,
+    "revenue": 199800,
+    "revGrowth": 12,
+    "season": "全年,节日+夏季户外",
+    "peakMon": "6-8月,11-12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "电池用太快",
+      "线太细易断",
+      "防水不够",
+      "亮度不够",
+      "遥控不好用"
+    ],
+    "improve": "USB+电池双供电+铜线+IP65防水+8模式+定时器",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 39,
+    "cat": "party",
+    "name": "Bubble Machine (泡泡机)",
+    "en": "Automatic Bubble Machine for Kids",
+    "price": 16.99,
+    "range": "$12.99-$22.99",
+    "rating": 4.3,
+    "reviews": 12000,
+    "bsr": "Top 40 Toys",
+    "kw": [
+      "bubble machine",
+      "bubble blower",
+      "automatic bubble maker",
+      "kids bubble machine",
+      "party bubble machine"
+    ],
+    "sv": [
+      120000,
+      85000,
+      68000,
+      95000,
+      52000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 8000,
+    "revenue": 135920,
+    "revGrowth": 22,
+    "season": "夏季爆发",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "泡泡液漏",
+      "出泡不均匀",
+      "电池消耗快",
+      "噪音大",
+      "用几次就坏"
+    ],
+    "improve": [
+      "大容量200ml+双风扇+安静电机+附赠泡泡液"
+    ],
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 40,
+    "cat": "party",
+    "name": "Hawaiian Leis (夏威夷花环)",
+    "en": "Hawaiian Leis Flower Necklaces 50-Pack",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.2,
+    "reviews": 10000,
+    "bsr": "Top 50 Toys",
+    "kw": [
+      "hawaiian leis",
+      "luau decorations",
+      "hawaiian party",
+      "flower necklace",
+      "tropical party"
+    ],
+    "sv": [
+      65000,
+      85000,
+      52000,
+      48000,
+      42000
+    ],
+    "cost": 0.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 10000,
+    "revenue": 79900,
+    "revGrowth": 15,
+    "season": "夏季派对",
+    "peakMon": "6-8月",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "花瓣掉落",
+      "有味道",
+      "太短",
+      "颜色单一",
+      "一次性"
+    ],
+    "improve": "丝绸材质+不褪色+50条装多色+多尺寸+可重复使用",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 41,
+    "cat": "party",
+    "name": "Tiki Torches (提基火炬)",
+    "en": "Solar Tiki Torches for Garden",
+    "price": 22.99,
+    "range": "$15.99-$34.99",
+    "rating": 4.2,
+    "reviews": 10000,
+    "bsr": "Top 50 Patio",
+    "kw": [
+      "tiki torch",
+      "solar torch light",
+      "outdoor torch",
+      "garden torch",
+      "flame torch light"
+    ],
+    "sv": [
+      95000,
+      120000,
+      68000,
+      52000,
+      85000
+    ],
+    "cost": 4,
+    "fba": 3.77,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 6000,
+    "revenue": 137940,
+    "revGrowth": 18,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "灯光不够逼真",
+      "不防水",
+      "电池不耐用",
+      "容易倒",
+      "安装不稳"
+    ],
+    "improve": "仿真火焰+IP65防水+2200mAh+插地式+多高度调节",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 42,
+    "cat": "ball",
+    "name": "Pickleballs (匹克球)",
+    "en": "Pickleball Balls Outdoor 12-Pack",
+    "price": 13.99,
+    "range": "$9.99-$18.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 20 Sports",
+    "kw": [
+      "pickleball",
+      "pickleball balls",
+      "pickleball paddle",
+      "pickleball set",
+      "pickleball outdoor"
+    ],
+    "sv": [
+      520000,
+      280000,
+      380000,
+      180000,
+      150000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 18000,
+    "revenue": 251820,
+    "revGrowth": 35,
+    "season": "全年,春夏高峰",
+    "peakMon": "4-9月",
+    "imgs": 5,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "容易裂",
+      "弹跳不一致",
+      "颜色不好辨认",
+      "飞行不稳",
+      "耐久性差"
+    ],
+    "improve": "40孔+耐用PE材料+USAPA标准+高可见度黄+12球装",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 43,
+    "cat": "ball",
+    "name": "Tennis Balls (网球)",
+    "en": "Penn Championship Tennis Balls 3-Pack",
+    "price": 5.97,
+    "range": "$2.97-$12.99",
+    "rating": 4.6,
+    "reviews": 40000,
+    "bsr": "Top 15 Sports",
+    "kw": [
+      "tennis balls",
+      "tennis ball",
+      "penn tennis balls",
+      "pressureless tennis balls",
+      "dog tennis balls"
+    ],
+    "sv": [
+      280000,
+      380000,
+      180000,
+      120000,
+      150000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 42,
+    "sales": 25000,
+    "revenue": 149250,
+    "revGrowth": 5,
+    "season": "春夏",
+    "peakMon": "4-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 15,
+    "amazSelf": true,
+    "pains": [
+      "气压衰减快",
+      "绒毛掉得快",
+      "不耐用",
+      "只适合打一次",
+      "弹跳不一致"
+    ],
+    "improve": "高气压+长效密封罐+加厚绒面+多场景适用",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 44,
+    "cat": "ball",
+    "name": "Golf Balls (高尔夫球)",
+    "en": "Titleist Pro V1 Golf Balls",
+    "price": 49.97,
+    "range": "$24.97-$54.99",
+    "rating": 4.8,
+    "reviews": 30000,
+    "bsr": "Top 10 Sports",
+    "kw": [
+      "golf balls",
+      "titleist pro v1",
+      "golf ball",
+      "pro v1",
+      "golf accessories"
+    ],
+    "sv": [
+      320000,
+      180000,
+      520000,
+      150000,
+      120000
+    ],
+    "cost": 5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 68,
+    "sales": 12000,
+    "revenue": 599640,
+    "revGrowth": 6,
+    "season": "春夏",
+    "peakMon": "4-9月",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 10,
+    "amazSelf": true,
+    "pains": [
+      "太贵",
+      "容易被偷",
+      "丢失心疼",
+      "硬度不适合初学者"
+    ],
+    "improve": "做性价比替代款+三层结构+Urethane封面+初学者友好",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 45,
+    "cat": "ball",
+    "name": "Fishing Line (编织鱼线)",
+    "en": "Braided Fishing Line 500YDS",
+    "price": 14.99,
+    "range": "$9.99-$24.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "Top 25 Sports",
+    "kw": [
+      "braided fishing line",
+      "fishing line",
+      "braided line",
+      "pe fishing line",
+      "fishing tackle"
+    ],
+    "sv": [
+      180000,
+      280000,
+      120000,
+      85000,
+      65000
+    ],
+    "cost": 2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 12000,
+    "revenue": 179880,
+    "revGrowth": 8,
+    "season": "春夏秋",
+    "peakMon": "5-9月",
+    "imgs": 5,
+    "aplus": true,
+    "video": true,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "实际拉力不够",
+      "线太粗",
+      "颜色掉色",
+      "打结困难",
+      "起毛"
+    ],
+    "improve": [
+      "4编+实测拉力+超细线径+不褪色+防起毛涂层"
+    ],
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 46,
+    "cat": "ball",
+    "name": "Pickleball Paddle (匹克球拍)",
+    "en": "Graphite Pickleball Paddle Set of 2",
+    "price": 34.99,
+    "range": "$24.99-$49.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "Top 30 Sports",
+    "kw": [
+      "pickleball paddle",
+      "pickleball racket",
+      "pickleball set",
+      "pickleball paddle set",
+      "carbon fiber pickleball"
+    ],
+    "sv": [
+      280000,
+      85000,
+      180000,
+      120000,
+      68000
+    ],
+    "cost": 5,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 10000,
+    "revenue": 349900,
+    "revGrowth": 30,
+    "season": "春夏高峰",
+    "peakMon": "4-9月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "太重",
+      "握把打滑",
+      "甜区小",
+      "不耐用",
+      "有噪音"
+    ],
+    "improve": "碳纤维面+蜂窝芯+280g轻量+防滑握把+大甜区+静音",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 47,
+    "cat": "ball",
+    "name": "Basketball (篮球)",
+    "en": "Wilson NCAA Official Game Basketball",
+    "price": 24.99,
+    "range": "$14.99-$39.99",
+    "rating": 4.5,
+    "reviews": 25000,
+    "bsr": "Top 35 Sports",
+    "kw": [
+      "basketball",
+      "basketball outdoor",
+      "spalding basketball",
+      "indoor outdoor basketball",
+      "youth basketball"
+    ],
+    "sv": [
+      350000,
+      180000,
+      150000,
+      120000,
+      95000
+    ],
+    "cost": 4,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 10000,
+    "revenue": 249900,
+    "revGrowth": 5,
+    "season": "全年,夏季户外",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 15,
+    "amazSelf": true,
+    "pains": [
+      "气嘴漏气",
+      "表面打滑",
+      "不耐磨",
+      "弹跳不均",
+      "太重/太轻"
+    ],
+    "improve": "复合皮面+深沟设计+加厚内胆+耐磨+精准气压",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 48,
+    "cat": "ball",
+    "name": "Spikeball Set (圆网球套装)",
+    "en": "Spikeball Round Net Game Set",
+    "price": 49.99,
+    "range": "$39.99-$59.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 45 Sports",
+    "kw": [
+      "spikeball",
+      "spikeball set",
+      "round net game",
+      "outdoor games",
+      "yard games"
+    ],
+    "sv": [
+      120000,
+      95000,
+      68000,
+      280000,
+      180000
+    ],
+    "cost": 8,
+    "fba": 5.19,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 6000,
+    "revenue": 299940,
+    "revGrowth": 20,
+    "season": "夏季爆发",
+    "peakMon": "5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 10,
+    "amazSelf": false,
+    "pains": [
+      "网太松/太紧",
+      "腿折叠不稳固",
+      "球质量差",
+      "配件丢失",
+      "携带不便"
+    ],
+    "improve": "可调节张力+折叠收纳+3球装+便携包+规则卡",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 49,
+    "cat": "ball",
+    "name": "Frisbee (飞盘)",
+    "en": "Aerobie Pro Flying Ring",
+    "price": 10.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.6,
+    "reviews": 25000,
+    "bsr": "Top 50 Sports",
+    "kw": [
+      "frisbee",
+      "flying disc",
+      "ultimate frisbee",
+      "disc golf",
+      "outdoor toys"
+    ],
+    "sv": [
+      180000,
+      120000,
+      85000,
+      150000,
+      180000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 15000,
+    "revenue": 164850,
+    "revGrowth": 10,
+    "season": "春夏秋户外",
+    "peakMon": "5-9月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "太硬接不住",
+      "风大飞不稳",
+      "手指出血",
+      "重量不准",
+      "颜色不好看"
+    ],
+    "improve": "软边设计+175g标准+亮色+耐磨材质+附赠收纳",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 50,
+    "cat": "ball",
+    "name": "Volleyball (排球)",
+    "en": "Mikasa Volleyball Official Size",
+    "price": 22.99,
+    "range": "$14.99-$34.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 55 Sports",
+    "kw": [
+      "volleyball",
+      "beach volleyball",
+      "outdoor volleyball",
+      "volleyball net set",
+      "mikasa volleyball"
+    ],
+    "sv": [
+      150000,
+      120000,
+      95000,
+      68000,
+      52000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 8000,
+    "revenue": 183920,
+    "revGrowth": 8,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "太硬",
+      "不防水",
+      "表面脱皮",
+      "弹性不够",
+      "充气后变形"
+    ],
+    "improve": [
+      "软PU面+18片设计+耐磨+防水+附赠气针"
+    ],
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 51,
+    "cat": "ball",
+    "name": "Badminton Set (羽毛球套装)",
+    "en": "Portable Badminton Net Set",
+    "price": 29.99,
+    "range": "$19.99-$49.99",
+    "rating": 4.2,
+    "reviews": 10000,
+    "bsr": "Top 60 Sports",
+    "kw": [
+      "badminton set",
+      "badminton net",
+      "portable badminton",
+      "yard games",
+      "badminton racket set"
+    ],
+    "sv": [
+      120000,
+      85000,
+      65000,
+      280000,
+      68000
+    ],
+    "cost": 5,
+    "fba": 5.19,
+    "refRate": 15,
+    "margin": 42,
+    "sales": 6000,
+    "revenue": 179940,
+    "revGrowth": 12,
+    "season": "春夏",
+    "peakMon": "5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "网太松",
+      "杆容易弯",
+      "拍子质量差",
+      "羽毛球不耐用",
+      "不好收纳"
+    ],
+    "improve": "玻纤拍+尼龙网+可折叠杆+便携包+6只羽毛球",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 52,
+    "cat": "toy",
+    "name": "Squishy Toys (解压玩具)",
+    "en": "Stress Relief Squishy Toys 25-Pack",
+    "price": 8.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.3,
+    "reviews": 30000,
+    "bsr": "Top 5 Toys",
+    "kw": [
+      "squishy toys",
+      "stress toys",
+      "fidget toys",
+      "sensory toys",
+      "party favors kids"
+    ],
+    "sv": [
+      280000,
+      180000,
+      520000,
+      220000,
+      150000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 22000,
+    "revenue": 197780,
+    "revGrowth": 18,
+    "season": "全年,节日季高峰",
+    "peakMon": "全年,11-12月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 35,
+    "amazSelf": false,
+    "pains": [
+      "有味道",
+      "容易破",
+      "太小",
+      "粘手",
+      "颜色和图片不符"
+    ],
+    "improve": [
+      "TPR环保材料+25个装+不粘手+独立包装"
+    ],
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 53,
+    "cat": "toy",
+    "name": "Playing Cards (扑克牌)",
+    "en": "Bicycle Standard Playing Cards 2-Pack",
+    "price": 5.98,
+    "range": "$4.99-$7.99",
+    "rating": 4.7,
+    "reviews": 60000,
+    "bsr": "Top 8 Toys",
+    "kw": [
+      "playing cards",
+      "bicycle cards",
+      "poker cards",
+      "card deck",
+      "standard playing cards"
+    ],
+    "sv": [
+      220000,
+      85000,
+      180000,
+      120000,
+      95000
+    ],
+    "cost": 0.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 30000,
+    "revenue": 179400,
+    "revGrowth": 3,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 12,
+    "amazSelf": true,
+    "pains": [
+      "牌面不光滑",
+      "纸质太薄",
+      "容易弯",
+      "包装简陋",
+      "只一副"
+    ],
+    "improve": "做定制图案款+300g纸+ linen纹面+2副装+精美盒",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 54,
+    "cat": "toy",
+    "name": "Baby Balance Bike (儿童平衡车)",
+    "en": "Baby Balance Bike for 1-2 Year Old",
+    "price": 29.99,
+    "range": "$25.99-$39.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 15 Toys",
+    "kw": [
+      "baby balance bike",
+      "balance bike",
+      "toddler bike",
+      "baby walker",
+      "ride on toy"
+    ],
+    "sv": [
+      150000,
+      280000,
+      120000,
+      85000,
+      120000
+    ],
+    "cost": 5,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 8000,
+    "revenue": 239920,
+    "revGrowth": 15,
+    "season": "全年,夏季户外",
+    "peakMon": "5-8月,12月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "不稳容易倒",
+      "轮子不灵活",
+      "高度不可调",
+      "有毛刺",
+      "太轻容易翻"
+    ],
+    "improve": [
+      "135度转向限位+静音轮+可调座椅+EVA轮+无锋利边"
+    ],
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 55,
+    "cat": "toy",
+    "name": "Card Sleeves (卡套)",
+    "en": "BCW Card Sleeves for Trading Cards",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.5,
+    "reviews": 20000,
+    "bsr": "Top 20 Toys",
+    "kw": [
+      "card sleeves",
+      "pokemon card sleeves",
+      "trading card sleeves",
+      "card protector",
+      "sleeves for cards"
+    ],
+    "sv": [
+      120000,
+      280000,
+      95000,
+      68000,
+      85000
+    ],
+    "cost": 0.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 65,
+    "sales": 15000,
+    "revenue": 119850,
+    "revGrowth": 12,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "尺寸不合适",
+      "太薄",
+      "容易粘住",
+      "不透明度不够",
+      "数量不够"
+    ],
+    "improve": "标准Poker尺寸+100张装+高透明+防反光+耐用",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 56,
+    "cat": "toy",
+    "name": "Kinetic Sand (动力沙)",
+    "en": "Kinetic Sand 2lb Beach Sand",
+    "price": 12.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.6,
+    "reviews": 25000,
+    "bsr": "Top 25 Toys",
+    "kw": [
+      "kinetic sand",
+      "magic sand",
+      "play sand",
+      "sensory sand",
+      "sand toy"
+    ],
+    "sv": [
+      180000,
+      85000,
+      120000,
+      68000,
+      52000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 12000,
+    "revenue": 155880,
+    "revGrowth": 8,
+    "season": "全年,夏季户外",
+    "peakMon": "6-8月,12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 10,
+    "amazSelf": false,
+    "pains": [
+      "变干不粘了",
+      "粘手",
+      "量太少",
+      "到处掉沙",
+      "颜色不好看"
+    ],
+    "improve": "98%沙+2%魔法粘合+不干不粘+多色可选+模具附赠",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 57,
+    "cat": "toy",
+    "name": "Sidewalk Chalk (人行道粉笔)",
+    "en": "Jumbo Sidewalk Chalk 52-Pack",
+    "price": 8.99,
+    "range": "$5.99-$14.99",
+    "rating": 4.6,
+    "reviews": 15000,
+    "bsr": "Top 30 Toys",
+    "kw": [
+      "sidewalk chalk",
+      "chalk for kids",
+      "outdoor chalk",
+      "chalk",
+      "kids art supplies"
+    ],
+    "sv": [
+      95000,
+      85000,
+      120000,
+      180000,
+      120000
+    ],
+    "cost": 1,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 10000,
+    "revenue": 89900,
+    "revGrowth": 10,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "容易断",
+      "颜色不鲜艳",
+      "太小不好握",
+      "下雨就没了",
+      "粉尘太多"
+    ],
+    "improve": "加粗大号+52色+可水洗+蛋形防断+无尘配方",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 58,
+    "cat": "toy",
+    "name": "Flying Disc Ring (飞行圈)",
+    "en": "Aerobie Sprint Flying Ring",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 40 Sports",
+    "kw": [
+      "flying ring",
+      "aerobie",
+      "flying disc",
+      "outdoor toys",
+      "flying toys"
+    ],
+    "sv": [
+      68000,
+      52000,
+      120000,
+      280000,
+      85000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 12000,
+    "revenue": 95880,
+    "revGrowth": 12,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 4,
+    "aplus": false,
+    "video": true,
+    "sellers": 15,
+    "amazSelf": false,
+    "pains": [
+      "太硬接不住",
+      "飞太远找不到",
+      "容易变形",
+      "颜色单调"
+    ],
+    "improve": "软边设计+亮色+迷你版可选+防丢荧光",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 59,
+    "cat": "toy",
+    "name": "Nerf Darts (泡沫弹)",
+    "en": "Compatible Nerf Elite Darts 200-Pack",
+    "price": 9.99,
+    "range": "$6.99-$14.99",
+    "rating": 4.5,
+    "reviews": 20000,
+    "bsr": "Top 35 Toys",
+    "kw": [
+      "nerf darts",
+      "nerf bullets",
+      "nerf ammo",
+      "foam darts",
+      "nerf elite darts"
+    ],
+    "sv": [
+      180000,
+      120000,
+      68000,
+      85000,
+      150000
+    ],
+    "cost": 1.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 18000,
+    "revenue": 179820,
+    "revGrowth": 8,
+    "season": "全年,夏季户外",
+    "peakMon": "全年,6-8月",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "不兼容某些枪",
+      "弹头脱落",
+      "射程不够",
+      "品质不稳定",
+      "数量不够"
+    ],
+    "improve": "通用兼容+加厚弹头+200发装+独立包装",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 60,
+    "cat": "toy",
+    "name": "Water Beads (水宝宝)",
+    "en": "Water Beads for Sensory Play 50K",
+    "price": 8.99,
+    "range": "$5.99-$14.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 40 Toys",
+    "kw": [
+      "water beads",
+      "orbeez",
+      "sensory beads",
+      "water gel beads",
+      "aqua beads"
+    ],
+    "sv": [
+      150000,
+      180000,
+      85000,
+      68000,
+      52000
+    ],
+    "cost": 1,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 10000,
+    "revenue": 89900,
+    "revGrowth": 10,
+    "season": "全年,夏季",
+    "peakMon": "6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "膨胀不均匀",
+      "颜色暗淡",
+      "有异味",
+      "太小不好捡",
+      "容易堵塞排水"
+    ],
+    "improve": "5万颗装+多色+膨胀至10mm+无毒环保+附带工具",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 61,
+    "cat": "apparel",
+    "name": "Sunglasses (偏光太阳镜)",
+    "en": "Polarized Sunglasses for Men Women",
+    "price": 15.99,
+    "range": "$12.99-$24.99",
+    "rating": 4.4,
+    "reviews": 50000,
+    "bsr": "Top 10 Clothing",
+    "kw": [
+      "sunglasses",
+      "polarized sunglasses",
+      "mens sunglasses",
+      "womens sunglasses",
+      "sport sunglasses"
+    ],
+    "sv": [
+      850000,
+      420000,
+      380000,
+      320000,
+      180000
+    ],
+    "cost": 2.5,
+    "fba": 2.38,
+    "refRate": 17,
+    "margin": 55,
+    "sales": 25000,
+    "revenue": 399750,
+    "revGrowth": 15,
+    "season": "夏季刚需",
+    "peakMon": "5-9月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 35,
+    "amazSelf": false,
+    "pains": [
+      "偏光效果差",
+      "镜架容易松",
+      "鼻托不舒服",
+      "不防滑",
+      "容易刮花"
+    ],
+    "improve": "TAC偏光镜片+TR90镜架+防滑鼻托+眼镜盒+FDA认证",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 62,
+    "cat": "apparel",
+    "name": "Swim Trunks (泳裤)",
+    "en": "Men's Quick-Dry Swim Trunks",
+    "price": 16.99,
+    "range": "$14.99-$29.99",
+    "rating": 4.3,
+    "reviews": 40000,
+    "bsr": "Top 15 Clothing",
+    "kw": [
+      "swim trunks",
+      "mens swim trunks",
+      "board shorts",
+      "mens bathing suit",
+      "swim shorts"
+    ],
+    "sv": [
+      520000,
+      380000,
+      180000,
+      150000,
+      120000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 17,
+    "margin": 50,
+    "sales": 20000,
+    "revenue": 339800,
+    "revGrowth": 25,
+    "season": "夏季刚需",
+    "peakMon": "5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "不速干",
+      "内衬不舒服",
+      "尺码偏小",
+      "掉色",
+      "口袋太小"
+    ],
+    "improve": "速干面料+网眼内衬+精准尺码+不褪色+拉链口袋",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 63,
+    "cat": "apparel",
+    "name": "Microfiber Towel (超细纤维毛巾)",
+    "en": "Microfiber Travel Towel Set",
+    "price": 11.99,
+    "range": "$8.99-$16.99",
+    "rating": 4.5,
+    "reviews": 25000,
+    "bsr": "Top 30 Sports",
+    "kw": [
+      "microfiber towel",
+      "travel towel",
+      "gym towel",
+      "quick dry towel",
+      "beach towel"
+    ],
+    "sv": [
+      180000,
+      120000,
+      95000,
+      85000,
+      280000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 12000,
+    "revenue": 143880,
+    "revGrowth": 10,
+    "season": "全年,夏季高峰",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "不够大",
+      "吸水不够",
+      "有味道",
+      "容易掉毛",
+      "干得不够快"
+    ],
+    "improve": "加大尺寸+速干+抗菌处理+不脱毛+收纳袋",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 64,
+    "cat": "apparel",
+    "name": "Athletic Socks (运动袜)",
+    "en": "Cushion Athletic Ankle Socks 6-Pair",
+    "price": 14.99,
+    "range": "$12.99-$19.99",
+    "rating": 4.5,
+    "reviews": 60000,
+    "bsr": "Top 5 Clothing",
+    "kw": [
+      "athletic socks",
+      "running socks",
+      "ankle socks",
+      "sports socks",
+      "cotton socks"
+    ],
+    "sv": [
+      280000,
+      180000,
+      220000,
+      150000,
+      380000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 17,
+    "margin": 52,
+    "sales": 22000,
+    "revenue": 329780,
+    "revGrowth": 5,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "底部太薄",
+      "不透气",
+      "起球",
+      "松紧带松了",
+      "尺码不准"
+    ],
+    "improve": [
+      "加厚底部+网眼透气+精梳棉+弹性好+6双装"
+    ],
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 65,
+    "cat": "apparel",
+    "name": "Sun Hat (防晒帽)",
+    "en": "UPF 50+ Wide Brim Sun Hat",
+    "price": 13.99,
+    "range": "$9.99-$19.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "Top 25 Clothing",
+    "kw": [
+      "sun hat",
+      "womens sun hat",
+      "beach hat",
+      "wide brim hat",
+      "fishing hat"
+    ],
+    "sv": [
+      220000,
+      150000,
+      180000,
+      95000,
+      68000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 17,
+    "margin": 55,
+    "sales": 12000,
+    "revenue": 167880,
+    "revGrowth": 12,
+    "season": "夏季刚需",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "帽檐太软",
+      "风一吹就飞",
+      "透气性差",
+      "不防水",
+      "太大/太小"
+    ],
+    "improve": "UPF50++可折叠+防风绳+透气网+可调节大小",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 66,
+    "cat": "apparel",
+    "name": "Cooling Towel (冰感毛巾)",
+    "en": "Instant Cooling Towel for Sports",
+    "price": 9.99,
+    "range": "$6.99-$14.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 45 Sports",
+    "kw": [
+      "cooling towel",
+      "ice towel",
+      "sports towel",
+      "cooling towel for neck",
+      "cold towel"
+    ],
+    "sv": [
+      120000,
+      85000,
+      95000,
+      68000,
+      52000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 15000,
+    "revenue": 149850,
+    "revGrowth": 18,
+    "season": "夏季爆发",
+    "peakMon": "6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "凉感不持久",
+      "太小",
+      "不柔软",
+      "有味道",
+      "掉渣"
+    ],
+    "improve": "微纤维+秒变凉+30度以下保持2小时+4片装+防水袋",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 67,
+    "cat": "apparel",
+    "name": "Water Shoes (涉水鞋)",
+    "en": "Quick-Dry Water Shoes for Men Women",
+    "price": 14.99,
+    "range": "$10.99-$19.99",
+    "rating": 4.3,
+    "reviews": 25000,
+    "bsr": "Top 35 Clothing",
+    "kw": [
+      "water shoes",
+      "water shoes for men",
+      "aqua shoes",
+      "beach shoes",
+      "swim shoes"
+    ],
+    "sv": [
+      380000,
+      180000,
+      85000,
+      120000,
+      95000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 54,
+    "sales": 18000,
+    "revenue": 269820,
+    "revGrowth": 22,
+    "season": "夏季刚需",
+    "peakMon": "5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "尺码不准",
+      "底部太薄踩石头疼",
+      "不防滑",
+      "容易进沙",
+      "带子断"
+    ],
+    "improve": "防滑橡胶底+快干网面+精准尺码+可调节带+保护头",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 68,
+    "cat": "apparel",
+    "name": "UV Arm Sleeves (防晒袖套)",
+    "en": "UV Protection Cooling Arm Sleeves",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.3,
+    "reviews": 15000,
+    "bsr": "Top 50 Clothing",
+    "kw": [
+      "arm sleeves",
+      "cooling arm sleeves",
+      "uv arm sleeves",
+      "sun sleeves",
+      "compression arm sleeves"
+    ],
+    "sv": [
+      85000,
+      65000,
+      52000,
+      48000,
+      42000
+    ],
+    "cost": 0.8,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 65,
+    "sales": 10000,
+    "revenue": 79900,
+    "revGrowth": 15,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "不冰感",
+      "太紧",
+      "容易滑下来",
+      "不防晒",
+      "起球"
+    ],
+    "improve": "UPF50+冰丝+防滑硅胶+不紧绷+4双装",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 69,
+    "cat": "apparel",
+    "name": "Fanny Pack (腰包)",
+    "en": "Waterproof Fanny Pack for Running",
+    "price": 9.99,
+    "range": "$6.99-$14.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "Top 40 Clothing",
+    "kw": [
+      "fanny pack",
+      "running belt",
+      "waist bag",
+      "crossbody bag",
+      "phone holder running"
+    ],
+    "sv": [
+      280000,
+      120000,
+      180000,
+      150000,
+      85000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 15000,
+    "revenue": 149850,
+    "revGrowth": 10,
+    "season": "全年,夏季户外",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": false,
+    "video": true,
+    "sellers": 30,
+    "amazSelf": false,
+    "pains": [
+      "防水不够",
+      "容量太小",
+      "拉链不顺",
+      "腰带弹力差",
+      "手机放不下"
+    ],
+    "improve": "IPX6防水+弹力腰带+大容量+耳机孔+反光条",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 70,
+    "cat": "apparel",
+    "name": "Dry Bag (防水袋)",
+    "en": "Waterproof Dry Bag 10L for Kayaking",
+    "price": 12.99,
+    "range": "$8.99-$19.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 50 Sports",
+    "kw": [
+      "dry bag",
+      "waterproof bag",
+      "dry bag for kayaking",
+      "waterproof dry bag",
+      "floating dry bag"
+    ],
+    "sv": [
+      95000,
+      120000,
+      68000,
+      85000,
+      42000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 8000,
+    "revenue": 103920,
+    "revGrowth": 12,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "封口不严",
+      "不真正防水",
+      "太大/太小",
+      "背带不舒服",
+      "没有提手"
+    ],
+    "improve": "500D防水+卷口密封+可浮水+可调背带+手机窗",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 71,
+    "cat": "apparel",
+    "name": "Sport Cap (运动帽)",
+    "en": "Lightweight Breathable Running Cap",
+    "price": 12.99,
+    "range": "$9.99-$18.99",
+    "rating": 4.4,
+    "reviews": 18000,
+    "bsr": "Top 30 Clothing",
+    "kw": [
+      "running hat",
+      "sports cap",
+      "golf hat",
+      "workout hat",
+      "visor hat"
+    ],
+    "sv": [
+      120000,
+      85000,
+      65000,
+      68000,
+      52000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 12000,
+    "revenue": 155880,
+    "revGrowth": 8,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "不透气",
+      "太紧",
+      "吸汗不好",
+      "遮阳不够",
+      "风一吹就掉"
+    ],
+    "improve": "空顶设计+冰丝面料+吸汗带+可调+防风绳",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 72,
+    "cat": "apparel",
+    "name": "Flip Flops (人字拖)",
+    "en": "Comfortable Flip Flops for Men Women",
+    "price": 15.99,
+    "range": "$12.99-$22.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "Top 35 Clothing",
+    "kw": [
+      "flip flops",
+      "mens flip flops",
+      "womens flip flops",
+      "sandals",
+      "beach sandals"
+    ],
+    "sv": [
+      520000,
+      280000,
+      380000,
+      280000,
+      180000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 18000,
+    "revenue": 287820,
+    "revGrowth": 10,
+    "season": "夏季刚需",
+    "peakMon": "5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "磨脚",
+      "底部太硬",
+      "带子断",
+      "不防滑",
+      "尺码不准"
+    ],
+    "improve": "EVA中底+人体工学+防滑纹+柔软带子+精准尺码",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 73,
+    "cat": "electronics",
+    "name": "Bug Zapper (电子灭蚊器)",
+    "en": "Electronic Bug Zapper Indoor/Outdoor",
+    "price": 29.99,
+    "range": "$24.99-$49.99",
+    "rating": 4.3,
+    "reviews": 30000,
+    "bsr": "Top 10 Patio",
+    "kw": [
+      "bug zapper",
+      "mosquito zapper",
+      "fly zapper",
+      "outdoor bug zapper",
+      "electronic insect killer"
+    ],
+    "sv": [
+      280000,
+      180000,
+      85000,
+      150000,
+      68000
+    ],
+    "cost": 5,
+    "fba": 3.77,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 12000,
+    "revenue": 359880,
+    "revGrowth": 20,
+    "season": "夏季刚需",
+    "peakMon": "5-9月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "灯管寿命短",
+      "清理蚊子麻烦",
+      "噪音大",
+      "覆盖面积不够",
+      "不够防水"
+    ],
+    "improve": "UV紫光+4200V电网+可拆卸清理盘+IPX4防水+15m覆盖",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 74,
+    "cat": "electronics",
+    "name": "Camping Lantern (露营灯)",
+    "en": "Vont LED Camping Lantern 2-Pack",
+    "price": 14.99,
+    "range": "$12.99-$19.99",
+    "rating": 4.6,
+    "reviews": 30000,
+    "bsr": "#31 Home Improvement",
+    "kw": [
+      "camping lantern",
+      "led lantern",
+      "emergency light",
+      "portable lantern",
+      "camping lights"
+    ],
+    "sv": [
+      180000,
+      150000,
+      120000,
+      85000,
+      280000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 54,
+    "sales": 15000,
+    "revenue": 224850,
+    "revGrowth": 12,
+    "season": "夏季露营高峰",
+    "peakMon": "5-9月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "亮度不够",
+      "电池消耗快",
+      "不够防水",
+      "开关键不好用",
+      "折叠不好折"
+    ],
+    "improve": "30LED+360度照明+可折叠+电池含+水抗+2包",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 75,
+    "cat": "electronics",
+    "name": "Tactical Flashlight (战术手电)",
+    "en": "GearLight LED Tactical Flashlight S1000",
+    "price": 12.99,
+    "range": "$9.99-$16.99",
+    "rating": 4.5,
+    "reviews": 35000,
+    "bsr": "#43 Home Improvement",
+    "kw": [
+      "tactical flashlight",
+      "led flashlight",
+      "bright flashlight",
+      "camping flashlight",
+      "rechargeable flashlight"
+    ],
+    "sv": [
+      280000,
+      380000,
+      180000,
+      120000,
+      150000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 18000,
+    "revenue": 233820,
+    "revGrowth": 8,
+    "season": "全年,夏季户外",
+    "peakMon": "全年,6-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "不是真1000流明",
+      "电池消耗快",
+      "不防水",
+      "变焦不准",
+      "外壳掉漆"
+    ],
+    "improve": "真实标注流明+可变焦+IPX5防水+5模式+附赠电池",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 76,
+    "cat": "electronics",
+    "name": "Neck Fan (挂脖风扇)",
+    "en": "Portable Rechargeable Neck Fan",
+    "price": 15.99,
+    "range": "$12.99-$24.99",
+    "rating": 4.3,
+    "reviews": 10000,
+    "bsr": "夏季搜索飙升",
+    "kw": [
+      "neck fan",
+      "portable fan",
+      "neck fan portable rechargeable",
+      "personal fan",
+      "hands free fan"
+    ],
+    "sv": [
+      180000,
+      150000,
+      120000,
+      85000,
+      68000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 12000,
+    "revenue": 191880,
+    "revGrowth": 40,
+    "season": "夏季爆发",
+    "peakMon": "6-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "风力不够",
+      "噪音大",
+      "充一次电用不久",
+      "头发绞进去",
+      "太重脖子酸"
+    ],
+    "improve": [
+      "无叶设计+3档风力+4000mAh+超轻196g+静音"
+    ],
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 77,
+    "cat": "electronics",
+    "name": "Bluetooth Speaker (蓝牙音箱)",
+    "en": "Portable Bluetooth Speaker Waterproof",
+    "price": 19.99,
+    "range": "$14.99-$29.99",
+    "rating": 4.4,
+    "reviews": 25000,
+    "bsr": "Top 15 Electronics",
+    "kw": [
+      "bluetooth speaker",
+      "portable speaker",
+      "waterproof speaker",
+      "outdoor speaker",
+      "shower speaker"
+    ],
+    "sv": [
+      520000,
+      380000,
+      220000,
+      180000,
+      120000
+    ],
+    "cost": 5,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 15000,
+    "revenue": 299850,
+    "revGrowth": 8,
+    "season": "全年,夏季户外",
+    "peakMon": "全年,6-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "音质一般",
+      "蓝牙连接断",
+      "电池不耐用",
+      "不够防水",
+      "充电口松动"
+    ],
+    "improve": "IPX7防水+12h续航+5.3蓝牙+LED灯+挂扣",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 78,
+    "cat": "electronics",
+    "name": "Solar Power Bank (太阳能充电宝)",
+    "en": "Solar Power Bank 26800mAh",
+    "price": 22.99,
+    "range": "$16.99-$34.99",
+    "rating": 4.2,
+    "reviews": 15000,
+    "bsr": "Top 30 Electronics",
+    "kw": [
+      "solar power bank",
+      "solar charger",
+      "portable charger",
+      "solar battery bank",
+      "outdoor charger"
+    ],
+    "sv": [
+      120000,
+      85000,
+      380000,
+      68000,
+      52000
+    ],
+    "cost": 5,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 44,
+    "sales": 10000,
+    "revenue": 229900,
+    "revGrowth": 15,
+    "season": "夏季户外",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "太阳能充电太慢",
+      "容量虚标",
+      "太重",
+      "充电速度慢",
+      "不够防水"
+    ],
+    "improve": "26800mAh实测+双USB快充+LED灯+IPX4+指南针",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 79,
+    "cat": "electronics",
+    "name": "Patio Umbrella Light (庭院伞灯)",
+    "en": "OYOCO Cordless Patio Umbrella LED Light",
+    "price": 14.99,
+    "range": "$11.99-$19.99",
+    "rating": 4.3,
+    "reviews": 10000,
+    "bsr": "#24 Home Improvement",
+    "kw": [
+      "patio umbrella light",
+      "umbrella light",
+      "patio light",
+      "outdoor umbrella light",
+      "deck light"
+    ],
+    "sv": [
+      65000,
+      52000,
+      42000,
+      38000,
+      32000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 8000,
+    "revenue": 119920,
+    "revGrowth": 12,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "亮度不够",
+      "电池不耐用",
+      "安装不稳固",
+      "灯珠坏",
+      "遥控不灵"
+    ],
+    "improve": "28LED+3档调光+AA电池+适配各种伞杆+遥控",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 80,
+    "cat": "electronics",
+    "name": "Star Projector (星空投影灯)",
+    "en": "BlissLights Sky Lite Laser Star Projector",
+    "price": 39.99,
+    "range": "$29.99-$59.99",
+    "rating": 4.3,
+    "reviews": 15000,
+    "bsr": "#34 Home Improvement",
+    "kw": [
+      "star projector",
+      "galaxy projector",
+      "laser light show",
+      "night light projector",
+      "room projector"
+    ],
+    "sv": [
+      220000,
+      180000,
+      85000,
+      120000,
+      68000
+    ],
+    "cost": 7,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 6000,
+    "revenue": 239940,
+    "revGrowth": 15,
+    "season": "全年,节日礼品季",
+    "peakMon": "全年,11-12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 15,
+    "amazSelf": false,
+    "pains": [
+      "绿点太亮",
+      "旋转太快",
+      "噪音大",
+      "蓝牙连接难",
+      "投影模糊"
+    ],
+    "improve": "多色LED+可调速度+APP控制+静音+高清投射",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 81,
+    "cat": "electronics",
+    "name": "Smart Plug (智能插座)",
+    "en": "Gosund Mini WiFi Smart Plug 4-Pack",
+    "price": 16.99,
+    "range": "$6.99-$24.99",
+    "rating": 4.5,
+    "reviews": 25000,
+    "bsr": "#48 Home Improvement",
+    "kw": [
+      "smart plug",
+      "wifi plug",
+      "alexa plug",
+      "smart home plug",
+      "google home plug"
+    ],
+    "sv": [
+      280000,
+      180000,
+      150000,
+      120000,
+      85000
+    ],
+    "cost": 3,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 15000,
+    "revenue": 254850,
+    "revGrowth": 12,
+    "season": "全年",
+    "peakMon": "全年均匀,11-12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "2.4G only",
+      "APP不好用",
+      "连接不稳定",
+      "太占插孔",
+      "不支持5G"
+    ],
+    "improve": "4包超值+Alexa/Google兼容+定时+2.4G+紧凑设计",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 82,
+    "cat": "pet",
+    "name": "Dog Poop Bags (拾便袋)",
+    "en": "Earth Rated Poop Bags 270-Count",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.7,
+    "reviews": 40000,
+    "bsr": "#4 Pet Supplies",
+    "kw": [
+      "dog poop bags",
+      "poop bags",
+      "dog waste bags",
+      "pet waste bags",
+      "dog bags"
+    ],
+    "sv": [
+      180000,
+      280000,
+      120000,
+      85000,
+      380000
+    ],
+    "cost": 1,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 25000,
+    "revenue": 249750,
+    "revGrowth": 5,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": true,
+    "pains": [
+      "不好撕开",
+      "袋子太薄",
+      "不环保",
+      "有味道",
+      "数量不够"
+    ],
+    "improve": [
+      "加厚+可降解+270卷+8卷装+分配器"
+    ],
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 83,
+    "cat": "pet",
+    "name": "Pet Grooming Rake (宠物梳毛器)",
+    "en": "Maxpower Planet Pet Grooming Rake",
+    "price": 12.99,
+    "range": "$8.99-$16.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "#42 Pet Supplies",
+    "kw": [
+      "pet grooming rake",
+      "deshedding tool",
+      "dog brush",
+      "undercoat rake",
+      "cat brush"
+    ],
+    "sv": [
+      95000,
+      85000,
+      180000,
+      68000,
+      120000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 10000,
+    "revenue": 129900,
+    "revGrowth": 10,
+    "season": "全年,春秋换毛高峰",
+    "peakMon": "3-5月,9-11月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "齿太尖刮伤皮肤",
+      "手柄不舒服",
+      "掉毛不够干净",
+      "不锈钢生锈",
+      "不够宽"
+    ],
+    "improve": "圆头安全齿+双面+人体工学+不锈钢+超宽2.6in",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 84,
+    "cat": "pet",
+    "name": "Dog Harness (狗胸背带)",
+    "en": "Best Pet Supplies Voyager Dog Harness",
+    "price": 14.99,
+    "range": "$10.99-$24.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "#50 Pet Supplies",
+    "kw": [
+      "dog harness",
+      "no pull dog harness",
+      "step in harness",
+      "small dog harness",
+      "dog vest"
+    ],
+    "sv": [
+      380000,
+      180000,
+      120000,
+      150000,
+      95000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 14000,
+    "revenue": 209860,
+    "revGrowth": 12,
+    "season": "全年,夏季遛狗高峰",
+    "peakMon": "全年,5-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "尺码不准",
+      "魔术贴粘毛",
+      "不够透气",
+      "胸带滑落",
+      "扣件不好用"
+    ],
+    "improve": "网眼透气+4大小调节+反光条+快扣+精准尺码表",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 85,
+    "cat": "pet",
+    "name": "Dog Chew Toy (狗磨牙玩具)",
+    "en": "Benebone Wishbone Dog Chew Toy",
+    "price": 14.99,
+    "range": "$10.99-$19.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "#47 Pet Supplies",
+    "kw": [
+      "dog chew toy",
+      "indestructible dog toy",
+      "dog toys for aggressive chewers",
+      "benebone",
+      "chew bone"
+    ],
+    "sv": [
+      150000,
+      85000,
+      120000,
+      68000,
+      52000
+    ],
+    "cost": 2.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 10000,
+    "revenue": 149900,
+    "revGrowth": 8,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 12,
+    "amazSelf": false,
+    "pains": [
+      "碎屑被吞",
+      "太大/太小",
+      "味道没了很快",
+      "不耐咬",
+      "太硬伤牙"
+    ],
+    "improve": [
+      "食品级尼龙+培根味+3尺寸+弧形设计易抓握"
+    ],
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 86,
+    "cat": "pet",
+    "name": "Squeaky Dog Toy (发声狗玩具)",
+    "en": "Best Pet Supplies Squeaky Duck Toy",
+    "price": 8.99,
+    "range": "$5.99-$14.99",
+    "rating": 4.3,
+    "reviews": 10000,
+    "bsr": "#48 Pet Supplies",
+    "kw": [
+      "squeaky dog toy",
+      "dog toy",
+      "plush dog toy",
+      "dog squeaky toy",
+      "crinkle dog toy"
+    ],
+    "sv": [
+      180000,
+      280000,
+      120000,
+      95000,
+      65000
+    ],
+    "cost": 1.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 12000,
+    "revenue": 107880,
+    "revGrowth": 10,
+    "season": "全年",
+    "peakMon": "全年均匀,12月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 28,
+    "amazSelf": false,
+    "pains": [
+      "发声器很快坏",
+      "棉花露出来",
+      "不够耐咬",
+      "太小",
+      "容易脏不好洗"
+    ],
+    "improve": "加厚绒面+双层缝线+可水洗+响纸+发声器加固",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 87,
+    "cat": "pet",
+    "name": "Flea & Tick Collar (驱虫项圈)",
+    "en": "Seresto Flea & Tick Collar for Dogs",
+    "price": 39.99,
+    "range": "$29.99-$49.99",
+    "rating": 4.4,
+    "reviews": 30000,
+    "bsr": "#29 Pet Supplies",
+    "kw": [
+      "flea collar",
+      "tick collar",
+      "seresto",
+      "flea and tick prevention",
+      "dog flea collar"
+    ],
+    "sv": [
+      180000,
+      120000,
+      280000,
+      95000,
+      150000
+    ],
+    "cost": 5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 12000,
+    "revenue": 479880,
+    "revGrowth": 5,
+    "season": "夏季高峰(虫多)",
+    "peakMon": "4-9月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 10,
+    "amazSelf": true,
+    "pains": [
+      "太贵",
+      "效果不够持久",
+      "引起皮肤过敏",
+      "尺寸不合适",
+      "有化学味"
+    ],
+    "improve": "8个月长效+防水+无味+低过敏性+多尺寸",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 88,
+    "cat": "pet",
+    "name": "Dog Life Jacket (狗狗救生衣)",
+    "en": "Dog Life Jacket Swimming Vest",
+    "price": 19.99,
+    "range": "$15.99-$29.99",
+    "rating": 4.4,
+    "reviews": 10000,
+    "bsr": "Top 80 Pet Supplies",
+    "kw": [
+      "dog life jacket",
+      "dog swim vest",
+      "dog flotation device",
+      "pet life jacket",
+      "dog life vest"
+    ],
+    "sv": [
+      85000,
+      65000,
+      42000,
+      38000,
+      32000
+    ],
+    "cost": 3,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 6000,
+    "revenue": 119940,
+    "revGrowth": 18,
+    "season": "夏季",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "尺码不准",
+      "不浮",
+      "勒腋下",
+      "魔术贴粘毛",
+      "手柄不结实"
+    ],
+    "improve": [
+      "精准尺码+高浮力泡沫+提手+ Rescue handle +反光条"
+    ],
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 89,
+    "cat": "pet",
+    "name": "Pet Seat Cover (宠物车垫)",
+    "en": "Waterproof Dog Car Seat Cover",
+    "price": 22.99,
+    "range": "$15.99-$34.99",
+    "rating": 4.4,
+    "reviews": 15000,
+    "bsr": "Top 60 Pet Supplies",
+    "kw": [
+      "dog car seat cover",
+      "pet seat cover",
+      "dog hammock",
+      "car seat protector",
+      "backseat cover"
+    ],
+    "sv": [
+      95000,
+      85000,
+      68000,
+      52000,
+      42000
+    ],
+    "cost": 4,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 48,
+    "sales": 8000,
+    "revenue": 183920,
+    "revGrowth": 10,
+    "season": "全年,夏季旅行高峰",
+    "peakMon": "全年,6-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "不防水",
+      "滑来滑去",
+      "固定带断",
+      "有味道",
+      "尺寸不适配"
+    ],
+    "improve": "600D牛津布+防水涂层+防滑底部+4锚点+通用适配",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 90,
+    "cat": "pet",
+    "name": "Dog Paw Washer (洗爪杯)",
+    "en": "Portable Dog Paw Washer Cup",
+    "price": 11.99,
+    "range": "$8.99-$16.99",
+    "rating": 4.3,
+    "reviews": 12000,
+    "bsr": "Top 70 Pet Supplies",
+    "kw": [
+      "dog paw washer",
+      "paw cleaner",
+      "dog paw cleaner",
+      "pet paw washer",
+      "mud dog paw"
+    ],
+    "sv": [
+      65000,
+      52000,
+      42000,
+      38000,
+      28000
+    ],
+    "cost": 1.5,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 58,
+    "sales": 8000,
+    "revenue": 95920,
+    "revGrowth": 15,
+    "season": "全年,雨季+夏季户外",
+    "peakMon": "全年,6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "软硅胶容易掉",
+      "水不够用",
+      "太小",
+      "洗不干净",
+      "狗不配合"
+    ],
+    "improve": "加厚硅胶刷毛+大容量350ml+多尺寸+便携+附毛巾",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 91,
+    "cat": "home",
+    "name": "Command Strips (无痕挂钩)",
+    "en": "Command Picture Hanging Strips",
+    "price": 7.99,
+    "range": "$5.99-$12.99",
+    "rating": 4.7,
+    "reviews": 30000,
+    "bsr": "#11 Home Improvement",
+    "kw": [
+      "command strips",
+      "picture hanging strips",
+      "wall hooks",
+      "command hooks",
+      "damage free hanging"
+    ],
+    "sv": [
+      220000,
+      120000,
+      180000,
+      280000,
+      95000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 25000,
+    "revenue": 199750,
+    "revGrowth": 5,
+    "season": "全年",
+    "peakMon": "全年均匀,9月返校",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 10,
+    "amazSelf": true,
+    "pains": [
+      "粘不住重物",
+      "取下留痕迹",
+      "潮湿环境失效",
+      "尺寸不够选",
+      "重复用不了"
+    ],
+    "improve": "多规格组合装+防水版+金属挂钩+可视重量标注",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 92,
+    "cat": "home",
+    "name": "Tub Drain Hair Catcher (防堵地漏)",
+    "en": "TubShroom Drain Hair Catcher",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.3,
+    "reviews": 20000,
+    "bsr": "#23 Home Improvement",
+    "kw": [
+      "drain hair catcher",
+      "tubshroom",
+      "shower drain cover",
+      "hair catcher",
+      "drain cover"
+    ],
+    "sv": [
+      95000,
+      68000,
+      52000,
+      120000,
+      85000
+    ],
+    "cost": 1.2,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 12000,
+    "revenue": 119880,
+    "revGrowth": 8,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 12,
+    "amazSelf": false,
+    "pains": [
+      "不适配所有排水口",
+      "不好清理",
+      "太软",
+      "头发绕不上去",
+      "有异味"
+    ],
+    "improve": "通用适配+硅胶材质+易清理+多色+抗菌涂层",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 93,
+    "cat": "home",
+    "name": "Cut Resistant Gloves (防切割手套)",
+    "en": "DEX FIT Cut Resistant Gloves Level 5",
+    "price": 8.99,
+    "range": "$6.99-$12.99",
+    "rating": 4.5,
+    "reviews": 10000,
+    "bsr": "#47 Home Improvement",
+    "kw": [
+      "cut resistant gloves",
+      "kitchen gloves",
+      "cut proof gloves",
+      "cooking gloves",
+      "food safe gloves"
+    ],
+    "sv": [
+      85000,
+      120000,
+      65000,
+      52000,
+      48000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 8000,
+    "revenue": 71920,
+    "revGrowth": 10,
+    "season": "全年,夏季烧烤季",
+    "peakMon": "全年,6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "尺寸不准",
+      "不透气",
+      "指尖不灵活",
+      "防割等级不够",
+      "不好洗"
+    ],
+    "improve": "Level 5+食品级+透气+精准尺码+可机洗",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 94,
+    "cat": "home",
+    "name": "Extension Cord (延长线)",
+    "en": "AmazonBasics 16/3 Outdoor Extension Cord",
+    "price": 12.99,
+    "range": "$8.99-$18.99",
+    "rating": 4.6,
+    "reviews": 15000,
+    "bsr": "#40 Home Improvement",
+    "kw": [
+      "extension cord",
+      "outdoor extension cord",
+      "power cord",
+      "electrical cord",
+      "heavy duty cord"
+    ],
+    "sv": [
+      180000,
+      120000,
+      95000,
+      85000,
+      68000
+    ],
+    "cost": 2.5,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 52,
+    "sales": 10000,
+    "revenue": 129900,
+    "revGrowth": 5,
+    "season": "全年,夏季户外",
+    "peakMon": "全年,6-8月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 15,
+    "amazSelf": true,
+    "pains": [
+      "太短",
+      "不够粗",
+      "插头松动",
+      "不防水",
+      "不好收纳"
+    ],
+    "improve": "多长度选择+14/3加粗+防水+扁平插头+绕线盘",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 95,
+    "cat": "home",
+    "name": "Citronella Candles (香茅蜡烛)",
+    "en": "Citronella Candles Outdoor 6-Pack",
+    "price": 16.99,
+    "range": "$12.99-$24.99",
+    "rating": 4.3,
+    "reviews": 10000,
+    "bsr": "Top 60 Patio",
+    "kw": [
+      "citronella candles",
+      "outdoor candles",
+      "mosquito candles",
+      "bug repellent candles",
+      "patio candles"
+    ],
+    "sv": [
+      120000,
+      85000,
+      95000,
+      68000,
+      52000
+    ],
+    "cost": 3,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 50,
+    "sales": 8000,
+    "revenue": 135920,
+    "revGrowth": 15,
+    "season": "夏季刚需",
+    "peakMon": "5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "驱蚊效果有限",
+      "燃烧时间短",
+      "蜡不够均匀",
+      "容器不好看",
+      "烟太大"
+    ],
+    "improve": "大豆蜡+30h燃烧+铁桶+多香型+无烟配方",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 96,
+    "cat": "home",
+    "name": "Cotton Swabs (棉签)",
+    "en": "Amazon Basics Cotton Swabs 500-Count",
+    "price": 2.64,
+    "range": "$2.64-$4.99",
+    "rating": 4.7,
+    "reviews": 69000,
+    "bsr": "#3 Beauty",
+    "kw": [
+      "cotton swabs",
+      "q tips",
+      "cotton buds",
+      "ear swabs",
+      "cotton sticks"
+    ],
+    "sv": [
+      380000,
+      280000,
+      120000,
+      85000,
+      65000
+    ],
+    "cost": 0.3,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 30000,
+    "revenue": 79200,
+    "revGrowth": 3,
+    "season": "全年刚需",
+    "peakMon": "全年均匀",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 10,
+    "amazSelf": true,
+    "pains": [
+      "棉花头容易掉",
+      "杆太硬",
+      "不够紧",
+      "数量不够"
+    ],
+    "improve": "纯棉头+纸杆环保+500支装+双头设计",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 97,
+    "cat": "home",
+    "name": "Cotton Rounds (化妆棉)",
+    "en": "Amazon Basics Cotton Rounds 100-Count",
+    "price": 2.96,
+    "range": "$2.96-$5.99",
+    "rating": 4.7,
+    "reviews": 47000,
+    "bsr": "#6 Beauty",
+    "kw": [
+      "cotton rounds",
+      "cotton pads",
+      "makeup remover pads",
+      "cotton circles",
+      "facial cotton pads"
+    ],
+    "sv": [
+      150000,
+      120000,
+      85000,
+      68000,
+      52000
+    ],
+    "cost": 0.3,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 25000,
+    "revenue": 74000,
+    "revGrowth": 3,
+    "season": "全年刚需",
+    "peakMon": "全年均匀",
+    "imgs": 4,
+    "aplus": false,
+    "video": false,
+    "sellers": 10,
+    "amazSelf": true,
+    "pains": [
+      "太薄",
+      "掉棉絮",
+      "不够软",
+      "有化纤感"
+    ],
+    "improve": "100%纯棉+加厚+不脱毛+有机认证+100片装",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 98,
+    "cat": "home",
+    "name": "Acne Patches (痘痘贴)",
+    "en": "Mighty Patch Hydrocolloid Patches 36ct",
+    "price": 12.99,
+    "range": "$10.99-$14.99",
+    "rating": 4.6,
+    "reviews": 181000,
+    "bsr": "#5 Beauty",
+    "kw": [
+      "acne patches",
+      "pimple patches",
+      "hydrocolloid patches",
+      "spot patches",
+      "acne treatment"
+    ],
+    "sv": [
+      280000,
+      220000,
+      85000,
+      65000,
+      120000
+    ],
+    "cost": 1.5,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 60,
+    "sales": 25000,
+    "revenue": 324750,
+    "revGrowth": 15,
+    "season": "全年刚需",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": true,
+    "video": false,
+    "sellers": 15,
+    "amazSelf": false,
+    "pains": [
+      "粘不住",
+      "太小",
+      "一晚贴不住",
+      "颜色太明显",
+      "数量太少"
+    ],
+    "improve": "医用级水胶体+超薄透明+36贴+大号可选+独立包装",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 99,
+    "cat": "home",
+    "name": "Face Razor (修面刀)",
+    "en": "Kitsch Dermaplane Razor 12-Pack",
+    "price": 8.99,
+    "range": "$6.99-$12.99",
+    "rating": 4.4,
+    "reviews": 32000,
+    "bsr": "#28 Beauty",
+    "kw": [
+      "dermaplane razor",
+      "face razor",
+      "eyebrow razor",
+      "facial razor",
+      "face shaver"
+    ],
+    "sv": [
+      180000,
+      150000,
+      120000,
+      85000,
+      65000
+    ],
+    "cost": 1,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 18000,
+    "revenue": 161820,
+    "revGrowth": 12,
+    "season": "全年",
+    "peakMon": "全年均匀",
+    "imgs": 5,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "刀片太钝",
+      "太锋利割伤",
+      "手柄滑",
+      "用一次就钝",
+      "不好控制角度"
+    ],
+    "improve": [
+      "不锈钢刀片+防滑手柄+安全护网+12支装+旅行套"
+    ],
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 100,
+    "cat": "home",
+    "name": "Under Eye Mask (眼膜)",
+    "en": "grace & stella Under Eye Masks 24-Pairs",
+    "price": 18.95,
+    "range": "$15.95-$22.95",
+    "rating": 4.3,
+    "reviews": 42000,
+    "bsr": "#20 Beauty",
+    "kw": [
+      "under eye mask",
+      "eye masks",
+      "eye patches",
+      "under eye patches",
+      "dark circle treatment"
+    ],
+    "sv": [
+      150000,
+      120000,
+      85000,
+      68000,
+      52000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 56,
+    "sales": 15000,
+    "revenue": 284250,
+    "revGrowth": 10,
+    "season": "全年,礼品季高峰",
+    "peakMon": "全年,11-12月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 20,
+    "amazSelf": false,
+    "pains": [
+      "滑下来",
+      "精华不够",
+      "效果不明显",
+      "太小贴不住",
+      "味道不好"
+    ],
+    "improve": [
+      "24对装+金箔胶原蛋白+不滑落设计+独立密封"
+    ],
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 101,
+    "cat": "home",
+    "name": "Disposable Face Towels (一次性洗脸巾)",
+    "en": "Clean Skin Club Clean Towels XL 50ct",
+    "price": 17.95,
+    "range": "$14.95-$22.95",
+    "rating": 4.8,
+    "reviews": 41000,
+    "bsr": "#7 Beauty",
+    "kw": [
+      "disposable face towels",
+      "face towels",
+      "clean towels xl",
+      "makeup towels",
+      "disposable washcloths"
+    ],
+    "sv": [
+      85000,
+      68000,
+      65000,
+      52000,
+      42000
+    ],
+    "cost": 2,
+    "fba": 3.19,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 12000,
+    "revenue": 215400,
+    "revGrowth": 12,
+    "season": "全年刚需",
+    "peakMon": "全年均匀",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 8,
+    "amazSelf": false,
+    "pains": [
+      "太薄",
+      "太小",
+      "太贵",
+      "数量不够"
+    ],
+    "improve": "USDA生物基+加大XL+50条+干湿两用+独立包装",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 102,
+    "cat": "home",
+    "name": "Deodorant (除臭剂)",
+    "en": "Native Deodorant Coconut & Vanilla",
+    "price": 12.91,
+    "range": "$10.99-$14.99",
+    "rating": 4.4,
+    "reviews": 107000,
+    "bsr": "#23 Beauty",
+    "kw": [
+      "deodorant",
+      "natural deodorant",
+      "aluminum free deodorant",
+      "native deodorant",
+      "mens deodorant"
+    ],
+    "sv": [
+      520000,
+      280000,
+      220000,
+      150000,
+      180000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 20000,
+    "revenue": 258200,
+    "revGrowth": 8,
+    "season": "全年刚需,夏季高峰",
+    "peakMon": "全年,5-8月",
+    "imgs": 6,
+    "aplus": true,
+    "video": true,
+    "sellers": 8,
+    "amazSelf": true,
+    "pains": [
+      "不持久",
+      "过敏",
+      "白渍",
+      "味道不持久",
+      "质地变化"
+    ],
+    "improve": "72h持久+铝-free+椰子油+多香型+不白渍",
+    "tags": [
+      "hot"
+    ]
+  },
+  {
+    "id": 103,
+    "cat": "sports",
+    "name": "Exercise Sliders (滑行盘)",
+    "en": "Core Sliding Discs Exercise Gliders",
+    "price": 8.99,
+    "range": "$6.99-$12.99",
+    "rating": 4.4,
+    "reviews": 10000,
+    "bsr": "Top 60 Sports",
+    "kw": [
+      "exercise sliders",
+      "core sliders",
+      "sliding discs",
+      "workout sliders",
+      "fitness gliders"
+    ],
+    "sv": [
+      65000,
+      52000,
+      42000,
+      38000,
+      32000
+    ],
+    "cost": 1,
+    "fba": 2.38,
+    "refRate": 15,
+    "margin": 62,
+    "sales": 8000,
+    "revenue": 71920,
+    "revGrowth": 10,
+    "season": "全年",
+    "peakMon": "全年均匀,1月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "地毯上不好滑",
+      "太小",
+      "不够滑",
+      "两面不一样但没标注"
+    ],
+    "improve": "双面设计(地毯+硬地)+EVA泡沫面+便携+运动指导",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 104,
+    "cat": "sports",
+    "name": "Push-Up Bars (俯卧撑支架)",
+    "en": "Push-Up Bars Stand for Floor Exercise",
+    "price": 14.99,
+    "range": "$10.99-$19.99",
+    "rating": 4.4,
+    "reviews": 12000,
+    "bsr": "Top 65 Sports",
+    "kw": [
+      "push up bars",
+      "push up stand",
+      "push up handles",
+      "exercise bars",
+      "floor exercise equipment"
+    ],
+    "sv": [
+      85000,
+      65000,
+      52000,
+      38000,
+      32000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 8000,
+    "revenue": 119920,
+    "revGrowth": 8,
+    "season": "全年",
+    "peakMon": "全年均匀,1月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "不稳打滑",
+      "高度不够",
+      "泡棉脱落",
+      "承重不够",
+      "螺丝松"
+    ],
+    "improve": "防滑底座+加厚泡棉+可拆卸+300磅承重+便携",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 105,
+    "cat": "apparel",
+    "name": "Compression Socks (压缩袜)",
+    "en": "Compression Socks for Running 3-Pair",
+    "price": 14.99,
+    "range": "$10.99-$19.99",
+    "rating": 4.4,
+    "reviews": 20000,
+    "bsr": "Top 20 Clothing",
+    "kw": [
+      "compression socks",
+      "running socks",
+      "calf compression sleeve",
+      "flight socks",
+      "nursing socks"
+    ],
+    "sv": [
+      180000,
+      120000,
+      65000,
+      52000,
+      48000
+    ],
+    "cost": 2,
+    "fba": 2.87,
+    "refRate": 15,
+    "margin": 54,
+    "sales": 12000,
+    "revenue": 179880,
+    "revGrowth": 10,
+    "season": "全年,夏季旅行",
+    "peakMon": "全年均匀",
+    "imgs": 6,
+    "aplus": true,
+    "video": false,
+    "sellers": 25,
+    "amazSelf": false,
+    "pains": [
+      "太紧",
+      "不透气",
+      "尺码不准",
+      "穿上难",
+      "下滑"
+    ],
+    "improve": "20-30mmHg+网眼透气+精准尺码+易穿设计+3双装",
+    "tags": [
+      "trend"
+    ]
+  },
+  {
+    "id": 106,
+    "cat": "garden",
+    "name": "Solar Pathway Lights (太阳能路径灯)",
+    "en": "Solar Powered Walkway Lights 8-Pack",
+    "price": 24.99,
+    "range": "$18.99-$34.99",
+    "rating": 4.2,
+    "reviews": 12000,
+    "bsr": "Top 55 Patio",
+    "kw": [
+      "solar pathway lights",
+      "solar walkway lights",
+      "garden path lights",
+      "outdoor solar lights",
+      "landscape path lights"
+    ],
+    "sv": [
+      95000,
+      68000,
+      52000,
+      220000,
+      68000
+    ],
+    "cost": 4,
+    "fba": 4.12,
+    "refRate": 15,
+    "margin": 46,
+    "sales": 8000,
+    "revenue": 199920,
+    "revGrowth": 12,
+    "season": "春夏安装",
+    "peakMon": "4-8月",
+    "imgs": 7,
+    "aplus": true,
+    "video": true,
+    "sellers": 22,
+    "amazSelf": false,
+    "pains": [
+      "亮度不够",
+      "不防水",
+      "玻璃罩碎",
+      "灯珠坏",
+      "塑料壳发黄"
+    ],
+    "improve": "不锈钢+IP65+自动开关+8h续航+8包装",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "id": 107,
+    "cat": "water",
+    "name": "Inflatable Paddle Board (充气桨板)",
+    "en": "Inflatable Stand Up Paddle Board",
+    "price": 189.99,
+    "range": "$149.99-$299.99",
+    "rating": 4.3,
+    "reviews": 10000,
+    "bsr": "Top 50 Sports",
+    "kw": [
+      "paddle board",
+      "inflatable paddle board",
+      "sup board",
+      "stand up paddle board",
+      "sup paddle board"
+    ],
+    "sv": [
+      280000,
+      180000,
+      150000,
+      120000,
+      95000
+    ],
+    "cost": 35,
+    "fba": 9.5,
+    "refRate": 15,
+    "margin": 45,
+    "sales": 3000,
+    "revenue": 569970,
+    "revGrowth": 20,
+    "season": "夏季爆发",
+    "peakMon": "5-8月",
+    "imgs": 10,
+    "aplus": true,
+    "video": true,
+    "sellers": 18,
+    "amazSelf": false,
+    "pains": [
+      "漏气",
+      "不好打气",
+      "太重",
+      "配件质量差",
+      "不够稳定"
+    ],
+    "improve": "军用PVC+双气室+电动泵+全套配件(桨+脚绳+包)+300磅承重",
+    "tags": [
+      "hot",
+      "trend"
+    ]
+  },
+  {
+    "id": 108,
+    "cat": "party",
+    "name": "Paper Plates (一次性纸盘)",
+    "en": "Disposable Paper Plates 100-Pack",
+    "price": 9.99,
+    "range": "$7.99-$14.99",
+    "rating": 4.5,
+    "reviews": 15000,
+    "bsr": "Top 60 Kitchen",
+    "kw": [
+      "paper plates",
+      "disposable plates",
+      "party plates",
+      "heavy duty paper plates",
+      "paper plates bulk"
+    ],
+    "sv": [
+      280000,
+      120000,
+      150000,
+      85000,
+      65000
+    ],
+    "cost": 1.5,
+    "fba": 3.5,
+    "refRate": 15,
+    "margin": 55,
+    "sales": 15000,
+    "revenue": 149850,
+    "revGrowth": 5,
+    "season": "全年,派对季高峰",
+    "peakMon": "全年,6-8月,12月",
+    "imgs": 5,
+    "aplus": false,
+    "video": false,
+    "sellers": 18,
+    "amazSelf": true,
+    "pains": [
+      "太薄渗油",
+      "不环保",
+      "不够硬",
+      "数量不够",
+      "颜色单一"
+    ],
+    "improve": "加厚蔗糖环保材质+100只装+多色+防油+可降解",
+    "tags": [
+      "trend"
+    ]
+  }
+]

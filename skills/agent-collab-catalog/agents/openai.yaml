@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Collab Catalog"
+  short_description: "Discover local multi-agent runtime skills."
+  default_prompt: "Use $agent-collab-catalog to identify which local collaboration skill or script fits this task."

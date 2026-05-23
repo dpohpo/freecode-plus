@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brain Web Operator"
+  short_description: "Drive labeled Claude and GPT browser tabs"
+  default_prompt: "Use $brain-web-operator to operate labeled Claude and GPT browser tabs through Brain MCP."

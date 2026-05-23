@@ -1,0 +1,48 @@
+# freecode-plus shell helpers
+
+export FREECODE_PLUS_ROOT="${FREECODE_PLUS_ROOT:-__FREECODE_PLUS_ROOT__}"
+export FREECODE_BIN="${FREECODE_BIN:-$HOME/bin/free-code}"
+export FREECODE_AGENT_TEAM_MODEL_PROFILES="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agent-team-model-profiles.json}"
+export FREEGLM_TEAM_LAYOUT="${FREEGLM_TEAM_LAYOUT:-grid}"
+
+_freecode_plus_tmux_launch() {
+  local script="$1"
+  local session="$2"
+  shift 2
+
+  local tmux_bin="${FREEGLM_TMUX_BIN:-$(command -v tmux 2>/dev/null)}"
+  if [[ -z "$tmux_bin" || ! -x "$tmux_bin" ]]; then
+    echo "tmux not found. Install tmux or set FREEGLM_TMUX_BIN." >&2
+    return 1
+  fi
+
+  if [[ -n "$TMUX" ]]; then
+    (cd "$FREECODE_PLUS_ROOT" && bash "$script" "$@")
+    return $?
+  fi
+
+  local cmd="cd ${(q)FREECODE_PLUS_ROOT} && bash ${(q)script}"
+  local arg
+  for arg in "$@"; do
+    cmd+=" ${(q)arg}"
+  done
+
+  if [[ "${FREEGLM_FRESH:-1}" != "0" ]]; then
+    "$tmux_bin" has-session -t "$session" 2>/dev/null && "$tmux_bin" kill-session -t "$session" 2>/dev/null || true
+    "$tmux_bin" new-session -s "$session" -c "$FREECODE_PLUS_ROOT" "$cmd"
+  else
+    "$tmux_bin" new-session -A -s "$session" -c "$FREECODE_PLUS_ROOT" "$cmd"
+  fi
+}
+
+freeglm() {
+  _freecode_plus_tmux_launch "scripts/glm-agent-team" "${FREEGLM_TEAM_SESSION:-freeglm-team}" "$@"
+}
+
+freeds() {
+  _freecode_plus_tmux_launch "scripts/deepseek-agent-team" "${FREEDS_TEAM_SESSION:-freeds-team}" "$@"
+}
+
+freecode-plus-refresh-profiles() {
+  (cd "$FREECODE_PLUS_ROOT" && bash scripts/ensure-agent-team-profiles)
+}

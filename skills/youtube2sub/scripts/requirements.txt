@@ -1,0 +1,22 @@
+# youtube2sub 依赖清单
+# 安装命令: pip install -r requirements.txt
+
+# 视频下载
+yt-dlp>=2024.1.0
+
+# ASR引擎 - FunASR (中文首选)
+funasr>=1.0.0
+modelscope>=1.10.0
+
+# ASR引擎 - faster-whisper (多语言备选)
+faster-whisper>=1.0.0
+
+# 音频处理
+pydub>=0.25.0
+
+# 语言检测
+langdetect>=1.0.9
+
+# 工具库
+requests>=2.28.0
+tqdm>=4.65.0

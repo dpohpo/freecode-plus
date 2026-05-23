@@ -1,0 +1,32 @@
+node_modules/
+dist/
+cli
+cli-dev
+openclaw/
+
+# macOS metadata
+.DS_Store
+._*
+
+# local/generated provider settings
+.env
+.env.*
+!.env.example
+agent-team-model-profiles.json
+agent-team-generated-settings/
+**/agent-team-model-profiles.json
+**/agent-team-generated-settings/
+**/*.settings.local.json
+
+# dependency and build folders copied from skills
+venv/
+.venv/
+env/
+.env/
+site-packages/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+.next/

@@ -1,0 +1,3 @@
+display_name: OpenCode Window
+short_description: Fast raw send to the interactive OpenCode chat window.
+default_prompt: Send short messages directly to OpenCode through the visible chat window.
