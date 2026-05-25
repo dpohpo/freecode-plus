@@ -11,6 +11,10 @@ import {
   buildInheritedEnvVars,
   getTeammateCommand,
 } from '../spawnUtils.js'
+import {
+  detectProfileAliasFromModelName,
+  resolveTeammateModelProfile,
+} from '../modelProfiles.js'
 import { assignTeammateColor } from '../teammateLayoutManager.js'
 import { isInsideTmux } from './detection.js'
 import type {
@@ -127,29 +131,45 @@ export class PaneBackendExecutor implements TeammateExecutor {
 
       // Build CLI flags to propagate to teammate
       const appState = this.context.getAppState()
+      let modelProfile = resolveTeammateModelProfile(config.model)
+      if (!modelProfile && config.model) {
+        const detectedAlias = detectProfileAliasFromModelName(config.model)
+        if (detectedAlias) {
+          modelProfile = resolveTeammateModelProfile(detectedAlias)
+        }
+      }
       let inheritedFlags = buildInheritedCliFlags({
         planModeRequired: config.planModeRequired,
         permissionMode: appState.toolPermissionContext.mode,
+        omitModel: !!modelProfile,
+        omitSettings: !!modelProfile,
       })
 
-      // If teammate has a custom model, add --model flag (or replace inherited one)
-      if (config.model) {
+      if (modelProfile?.settingsPath) {
         inheritedFlags = inheritedFlags
-          .split(' ')
-          .filter(
-            (flag, i, arr) => flag !== '--model' && arr[i - 1] !== '--model',
-          )
-          .join(' ')
+          ? `${inheritedFlags} --bare --settings ${quote([modelProfile.settingsPath])}`
+          : `--bare --settings ${quote([modelProfile.settingsPath])}`
+      }
+
+      const modelForFlag = modelProfile?.model ?? config.model
+      if (modelForFlag) {
         inheritedFlags = inheritedFlags
-          ? `${inheritedFlags} --model ${quote([config.model])}`
-          : `--model ${quote([config.model])}`
+          ? `${inheritedFlags} --model ${quote([modelForFlag])}`
+          : `--model ${quote([modelForFlag])}`
       }
 
       const flagsStr = inheritedFlags ? ` ${inheritedFlags}` : ''
       const workingDir = config.cwd
 
       // Build environment variables to forward to teammate
-      const envStr = buildInheritedEnvVars()
+      const envStr = buildInheritedEnvVars(
+        modelProfile
+          ? {
+              omit: modelProfile.clearEnv,
+              unset: modelProfile.clearEnv,
+            }
+          : undefined,
+      )
 
       const spawnCommand = `cd ${quote([workingDir])} && env ${envStr} ${quote([binaryPath])} ${teammateArgs}${flagsStr}`
 

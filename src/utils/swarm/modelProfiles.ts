@@ -65,6 +65,10 @@ export type ResolvedTeammateModelProfile = {
   clearEnv: readonly string[]
 }
 
+function normalizeProfileAlias(alias: string): string {
+  return alias.trim().toLowerCase()
+}
+
 function getProfileConfigPath(): string {
   return (
     process.env.FREECODE_AGENT_TEAM_MODEL_PROFILES ||
@@ -87,7 +91,7 @@ function readConfiguredProfiles(): Record<string, TeamModelProfile> {
   const profiles = parsed.profiles ?? (parsed as Record<string, TeamModelProfile>)
   return Object.fromEntries(
     Object.entries(profiles).map(([key, profile]) => [
-      key.toLowerCase(),
+      normalizeProfileAlias(key),
       profile,
     ]),
   )
@@ -129,6 +133,13 @@ function getBuiltInProfile(alias: string): TeamModelProfile | undefined {
           process.env.DEEPSEEK_API_KEY ||
           process.env.DEEPSEEK_ANTHROPIC_AUTH_TOKEN ||
           process.env.ANTHROPIC_API_KEY,
+        ...(!process.env.DEEPSEEK_API_KEY &&
+          !process.env.DEEPSEEK_ANTHROPIC_AUTH_TOKEN &&
+          !process.env.ANTHROPIC_API_KEY && {
+            apiKeyHelper:
+              process.env.DEEPSEEK_API_KEY_HELPER ||
+              'security find-generic-password -a "$USER" -s freecode-deepseek-api-key -w',
+          }),
         defaultOpusModel:
           process.env.DEEPSEEK_AGENT_TEAM_MODEL || 'deepseek-v4-pro',
         defaultSonnetModel:
@@ -137,13 +148,6 @@ function getBuiltInProfile(alias: string): TeamModelProfile | undefined {
           process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || 'deepseek-v4-flash',
         smallFastModel:
           process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || 'deepseek-v4-flash',
-        availableModels: [
-          process.env.DEEPSEEK_AGENT_TEAM_MODEL || 'deepseek-v4-pro',
-          process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || 'deepseek-v4-flash',
-          'opus',
-          'sonnet',
-          'haiku',
-        ],
         extraEnv: {
           ANTHROPIC_CUSTOM_MODEL_OPTION:
             process.env.DEEPSEEK_AGENT_TEAM_MODEL || 'deepseek-v4-pro',
@@ -170,7 +174,8 @@ function settingsEnvForProfile(
   return {
     ...(profile.baseUrl && { ANTHROPIC_BASE_URL: profile.baseUrl }),
     ...(profile.authToken && { ANTHROPIC_AUTH_TOKEN: profile.authToken }),
-    ...(profile.apiKey && { ANTHROPIC_API_KEY: profile.apiKey }),
+    ...(profile.apiKey &&
+      !profile.apiKeyHelper && { ANTHROPIC_API_KEY: profile.apiKey }),
     ANTHROPIC_MODEL: profile.model,
     ...(profile.smallFastModel && {
       ANTHROPIC_SMALL_FAST_MODEL: profile.smallFastModel,
@@ -231,13 +236,6 @@ function writeGeneratedSettings(
   const path = join(dir, `${alias}.settings.json`)
   const settings = {
     model: profile.model,
-    availableModels: profile.availableModels ?? [
-      profile.model,
-      ...(profile.smallFastModel ? [profile.smallFastModel] : []),
-      'opus',
-      'sonnet',
-      'haiku',
-    ],
     ...(profile.apiKeyHelper && { apiKeyHelper: profile.apiKeyHelper }),
     env: settingsEnvForProfile(profile),
     teammateDefaultModel: null,
@@ -250,7 +248,11 @@ function writeGeneratedSettings(
 }
 
 export function getTeammateModelProfileAliases(): readonly string[] {
-  return TEAMMATE_MODEL_PROFILE_ALIASES
+  const aliases = new Set<string>(TEAMMATE_MODEL_PROFILE_ALIASES)
+  for (const alias of Object.keys(readConfiguredProfiles()).sort()) {
+    aliases.add(alias)
+  }
+  return [...aliases]
 }
 
 /**
@@ -263,6 +265,21 @@ export function detectProfileAliasFromModelName(
 ): string | null {
   if (!modelName) return null
   const lower = modelName.toLowerCase()
+
+  for (const [alias, profile] of Object.entries(readConfiguredProfiles())) {
+    const matchesConfiguredModel = [
+      profile.model,
+      profile.smallFastModel,
+      profile.defaultOpusModel,
+      profile.defaultSonnetModel,
+      profile.defaultHaikuModel,
+      ...(profile.availableModels ?? []),
+    ]
+      .filter((value): value is string => !!value)
+      .some(profileModel => profileModel.toLowerCase() === lower)
+    if (matchesConfiguredModel) return alias
+  }
+
   if (lower.startsWith('glm-')) return 'glm'
   if (lower.includes('deepseek')) return 'deepseekvpro'
   return null
@@ -272,8 +289,12 @@ export function resolveTeammateModelProfile(
   model: string | undefined,
 ): ResolvedTeammateModelProfile | null {
   if (!model) return null
-  const alias = model.trim().toLowerCase()
-  if (!(TEAMMATE_MODEL_PROFILE_ALIASES as readonly string[]).includes(alias)) {
+  const alias = normalizeProfileAlias(model)
+  const configuredProfiles = readConfiguredProfiles()
+  if (
+    !(TEAMMATE_MODEL_PROFILE_ALIASES as readonly string[]).includes(alias) &&
+    !configuredProfiles[alias]
+  ) {
     return null
   }
 

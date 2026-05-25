@@ -1,10 +1,11 @@
-import { mkdtempSync, readFileSync, rmSync } from 'fs'
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'fs'
 import { tmpdir } from 'os'
 import { join } from 'path'
 import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import { jsonParse } from '../slowOperations.js'
 import {
   detectProfileAliasFromModelName,
+  getTeammateModelProfileAliases,
   resolveTeammateModelProfile,
 } from './modelProfiles.js'
 
@@ -14,6 +15,7 @@ const touchedEnvKeys = [
   'ZAI_API_KEY',
   'ZHIPU_API_KEY',
   'DEEPSEEK_API_KEY',
+  'DEEPSEEK_API_KEY_HELPER',
   'DEEPSEEK_ANTHROPIC_AUTH_TOKEN',
   'DEEPSEEK_AGENT_TEAM_MODEL',
   'DEEPSEEK_AGENT_TEAM_SMALL_MODEL',
@@ -109,11 +111,10 @@ describe('teammate model profiles', () => {
       readFileSync(profile!.settingsPath!, 'utf-8'),
     ) as {
       model: string
-      availableModels: string[]
       env: Record<string, string>
     }
     expect(settings.model).toBe('deepseek-v4-pro')
-    expect(settings.availableModels).toContain('deepseek-v4-pro')
+    expect(settings).not.toHaveProperty('availableModels')
     expect(settings.env.ANTHROPIC_BASE_URL).toBe(
       'https://api.deepseek.com/anthropic',
     )
@@ -121,6 +122,66 @@ describe('teammate model profiles', () => {
     expect(settings.env.ANTHROPIC_AUTH_TOKEN).toBeUndefined()
     expect(settings.env.ANTHROPIC_MODEL).toBe('deepseek-v4-pro')
     expect(settings.env.ANTHROPIC_DEFAULT_OPUS_MODEL).toBe('deepseek-v4-pro')
+  })
+
+  test('resolves DeepSeek profile with apiKeyHelper settings when no direct key is present', () => {
+    process.env.DEEPSEEK_API_KEY_HELPER = 'printf helper-key'
+
+    const profile = resolveTeammateModelProfile('deepseekvpro')
+
+    expect(profile?.alias).toBe('deepseekvpro')
+    const settings = jsonParse(
+      readFileSync(profile!.settingsPath!, 'utf-8'),
+    ) as {
+      apiKeyHelper?: string
+      env: Record<string, string>
+    }
+    expect(settings.apiKeyHelper).toBe('printf helper-key')
+    expect(settings.env.ANTHROPIC_API_KEY).toBeUndefined()
+    expect(settings.env.ANTHROPIC_AUTH_TOKEN).toBeUndefined()
+    expect(settings.env.ANTHROPIC_BASE_URL).toBe(
+      'https://api.deepseek.com/anthropic',
+    )
+  })
+
+  test('resolves configured custom profiles for future providers', () => {
+    writeFileSync(
+      process.env.FREECODE_AGENT_TEAM_MODEL_PROFILES!,
+      JSON.stringify(
+        {
+          profiles: {
+            kimi: {
+              model: 'kimi-k2',
+              baseUrl: 'https://api.moonshot.cn/anthropic',
+              apiKey: 'test-kimi-key',
+              smallFastModel: 'kimi-k2-turbo',
+              availableModels: ['kimi-k2', 'kimi-k2-turbo'],
+            },
+          },
+        },
+        null,
+        2,
+      ),
+    )
+
+    const profile = resolveTeammateModelProfile('kimi')
+
+    expect(profile?.alias).toBe('kimi')
+    expect(profile?.model).toBe('kimi-k2')
+    expect(getTeammateModelProfileAliases()).toContain('kimi')
+    expect(detectProfileAliasFromModelName('kimi-k2')).toBe('kimi')
+
+    const settings = jsonParse(
+      readFileSync(profile!.settingsPath!, 'utf-8'),
+    ) as {
+      model: string
+      env: Record<string, string>
+    }
+    expect(settings.model).toBe('kimi-k2')
+    expect(settings.env.ANTHROPIC_BASE_URL).toBe(
+      'https://api.moonshot.cn/anthropic',
+    )
+    expect(settings.env.ANTHROPIC_API_KEY).toBe('test-kimi-key')
   })
 })
 

@@ -78,10 +78,10 @@ describe('buildInheritedEnvVars', () => {
     expect(env).toContain('ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro')
     expect(env).toContain('ANTHROPIC_CUSTOM_MODEL_OPTION=deepseek-v4-pro')
     expect(env).toContain(
-      'ANTHROPIC_CUSTOM_MODEL_OPTION_NAME=DeepSeek\\ V4\\ Pro',
+      "ANTHROPIC_CUSTOM_MODEL_OPTION_NAME='DeepSeek V4 Pro'",
     )
     expect(env).toContain(
-      'ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION=DeepSeek\\ V4\\ Pro\\ via\\ DeepSeek\\ Anthropic-compatible\\ API',
+      "ANTHROPIC_CUSTOM_MODEL_OPTION_DESCRIPTION='DeepSeek V4 Pro via DeepSeek Anthropic-compatible API'",
     )
     expect(env).toContain('ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash')
     expect(env).toContain('ANTHROPIC_SMALL_FAST_MODEL=deepseek-v4-flash')

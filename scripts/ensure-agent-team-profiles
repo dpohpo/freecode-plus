@@ -15,8 +15,12 @@ PROFILE_FILE="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agen
 mkdir -p "$(dirname "$PROFILE_FILE")"
 chmod 700 "$(dirname "$PROFILE_FILE")" 2>/dev/null || true
 
+DEEPSEEK_PROFILE_TOKEN_SOURCE="${DEEPSEEK_PROFILE_TOKEN_SOURCE:-env}"
 if [[ -z "${DEEPSEEK_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
   DEEPSEEK_API_KEY="$(security find-generic-password -a "$USER" -s freecode-deepseek-api-key -w 2>/dev/null || true)"
+  if [[ -n "${DEEPSEEK_API_KEY:-}" ]]; then
+    DEEPSEEK_PROFILE_TOKEN_SOURCE="keychain"
+  fi
 fi
 
 if [[ -z "${ZAI_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
@@ -38,6 +42,8 @@ fi
 export PROFILE_FILE
 export GLM_PROFILE_TOKEN="${GLM_ANTHROPIC_AUTH_TOKEN:-${ZAI_API_KEY:-${ZHIPU_API_KEY:-}}}"
 export DEEPSEEK_PROFILE_TOKEN="${DEEPSEEK_ANTHROPIC_AUTH_TOKEN:-${DEEPSEEK_API_KEY:-}}"
+export DEEPSEEK_PROFILE_TOKEN_SOURCE
+export DEEPSEEK_PROFILE_API_KEY_HELPER="${DEEPSEEK_PROFILE_API_KEY_HELPER:-security find-generic-password -a \"\$USER\" -s freecode-deepseek-api-key -w}"
 export CLAUDE_PROFILE_API_KEY="${CLAUDE_PROFILE_API_KEY:-${ANTHROPIC_API_KEY:-}}"
 export GLM_ANTHROPIC_BASE_URL
 
@@ -74,19 +80,14 @@ mergeProfile("glm", withDefined({
 
 mergeProfile("deepseekvpro", withDefined({
   baseUrl: process.env.DEEPSEEK_ANTHROPIC_BASE_URL || "https://api.deepseek.com/anthropic",
-  apiKey: process.env.DEEPSEEK_PROFILE_TOKEN,
+  ...(process.env.DEEPSEEK_PROFILE_TOKEN_SOURCE === "keychain"
+    ? { apiKeyHelper: process.env.DEEPSEEK_PROFILE_API_KEY_HELPER }
+    : { apiKey: process.env.DEEPSEEK_PROFILE_TOKEN }),
   model: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
   defaultOpusModel: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
   defaultSonnetModel: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
   defaultHaikuModel: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
   smallFastModel: process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
-  availableModels: [
-    process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
-    process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL || "deepseek-v4-flash",
-    "opus",
-    "sonnet",
-    "haiku",
-  ],
   extraEnv: {
     ANTHROPIC_CUSTOM_MODEL_OPTION: process.env.DEEPSEEK_AGENT_TEAM_MODEL || "deepseek-v4-pro",
     ANTHROPIC_CUSTOM_MODEL_OPTION_NAME: "DeepSeek V4 Pro",
@@ -101,16 +102,15 @@ if (profiles.deepseekvpro) {
     profiles.deepseekvpro.apiKey = profiles.deepseekvpro.authToken
   }
   delete profiles.deepseekvpro.authToken
+  if (profiles.deepseekvpro.apiKeyHelper) {
+    delete profiles.deepseekvpro.apiKey
+  }
   for (const key of ["model", "defaultOpusModel", "defaultSonnetModel"]) {
     if (profiles.deepseekvpro[key] === "deepseek-v4-pro[1m]") {
       profiles.deepseekvpro[key] = "deepseek-v4-pro"
     }
   }
-  if (Array.isArray(profiles.deepseekvpro.availableModels)) {
-    profiles.deepseekvpro.availableModels = profiles.deepseekvpro.availableModels.map(model =>
-      model === "deepseek-v4-pro[1m]" ? "deepseek-v4-pro" : model
-    )
-  }
+  delete profiles.deepseekvpro.availableModels
 }
 
 const claudeApiKey = process.env.CLAUDE_PROFILE_API_KEY

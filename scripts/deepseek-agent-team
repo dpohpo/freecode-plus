@@ -6,8 +6,12 @@ source "$ROOT/scripts/resolve-bun.sh"
 BUN_BIN="$(resolve_bun_bin)"
 CLI="$ROOT/scripts/freecode-source-cli.sh"
 
+DEEPSEEK_TOKEN_SOURCE="${DEEPSEEK_TOKEN_SOURCE:-env}"
 if [[ -z "${DEEPSEEK_API_KEY:-}" ]] && command -v security >/dev/null 2>&1; then
   DEEPSEEK_API_KEY="$(security find-generic-password -a "$USER" -s freecode-deepseek-api-key -w 2>/dev/null || true)"
+  if [[ -n "${DEEPSEEK_API_KEY:-}" ]]; then
+    DEEPSEEK_TOKEN_SOURCE="keychain"
+  fi
 fi
 
 TOKEN="${DEEPSEEK_ANTHROPIC_AUTH_TOKEN:-${DEEPSEEK_API_KEY:-}}"
@@ -27,6 +31,8 @@ export DEEPSEEK_AGENT_TEAM_SMALL_MODEL="${DEEPSEEK_AGENT_TEAM_SMALL_MODEL:-deeps
 export DEEPSEEK_API_TIMEOUT_MS="${DEEPSEEK_API_TIMEOUT_MS:-3000000}"
 export DEEPSEEK_EFFORT_LEVEL="${DEEPSEEK_EFFORT_LEVEL:-max}"
 export DEEPSEEK_ANTHROPIC_AUTH_TOKEN="$TOKEN"
+export DEEPSEEK_TOKEN_SOURCE
+export DEEPSEEK_API_KEY_HELPER="${DEEPSEEK_API_KEY_HELPER:-security find-generic-password -a \"\$USER\" -s freecode-deepseek-api-key -w}"
 export FREECODE_AGENT_TEAM_MODEL_PROFILES="${FREECODE_AGENT_TEAM_MODEL_PROFILES:-$HOME/.config/free-code/agent-team-model-profiles.json}"
 export FREEGLM_TEAM_LAYOUT="${FREEGLM_TEAM_LAYOUT:-grid}"
 
@@ -34,9 +40,14 @@ export FREEGLM_TEAM_LAYOUT="${FREEGLM_TEAM_LAYOUT:-grid}"
 
 "$BUN_BIN" --eval '
 const settings = {
+  ...(process.env.DEEPSEEK_TOKEN_SOURCE === "keychain"
+    ? { apiKeyHelper: process.env.DEEPSEEK_API_KEY_HELPER }
+    : {}),
   env: {
     ANTHROPIC_BASE_URL: process.env.DEEPSEEK_ANTHROPIC_BASE_URL,
-    ANTHROPIC_API_KEY: process.env.DEEPSEEK_ANTHROPIC_AUTH_TOKEN,
+    ...(process.env.DEEPSEEK_TOKEN_SOURCE === "keychain"
+      ? {}
+      : { ANTHROPIC_API_KEY: process.env.DEEPSEEK_ANTHROPIC_AUTH_TOKEN }),
     ANTHROPIC_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
     ANTHROPIC_DEFAULT_SONNET_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
     ANTHROPIC_DEFAULT_OPUS_MODEL: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
@@ -50,13 +61,6 @@ const settings = {
     API_TIMEOUT_MS: process.env.DEEPSEEK_API_TIMEOUT_MS,
   },
   model: process.env.DEEPSEEK_AGENT_TEAM_MODEL,
-  availableModels: [
-    process.env.DEEPSEEK_AGENT_TEAM_MODEL,
-    process.env.DEEPSEEK_AGENT_TEAM_SMALL_MODEL,
-    "opus",
-    "sonnet",
-    "haiku",
-  ],
   teammateDefaultModel: null,
 }
 await Bun.write(process.env.SETTINGS_FILE, JSON.stringify(settings, null, 2) + "\n")
@@ -73,4 +77,4 @@ env \
   FREEGLM_TEAM_LAYOUT="$FREEGLM_TEAM_LAYOUT" \
   CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 \
   CLAUDE_CODE_TEAMMATE_COMMAND="$CLI" \
-  "$CLI" --dangerously-skip-permissions --permission-mode bypassPermissions --settings "$SETTINGS_FILE" --append-system-prompt-file "$ROOT/scripts/agent-team-system-prompt.txt" --teammate-mode tmux "$@"
+  "$CLI" --bare --dangerously-skip-permissions --permission-mode bypassPermissions --settings "$SETTINGS_FILE" --append-system-prompt-file "$ROOT/scripts/agent-team-system-prompt.txt" --teammate-mode tmux "$@"

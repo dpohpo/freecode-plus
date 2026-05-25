@@ -18,13 +18,6 @@
       "defaultSonnetModel": "deepseek-v4-pro",
       "defaultHaikuModel": "deepseek-v4-flash",
       "smallFastModel": "deepseek-v4-flash",
-      "availableModels": [
-        "deepseek-v4-pro",
-        "deepseek-v4-flash",
-        "opus",
-        "sonnet",
-        "haiku"
-      ],
       "effortLevel": "max",
       "apiTimeoutMs": "3000000",
       "extraEnv": {

@@ -190,8 +190,8 @@ function buildProfileAwareSpawnPieces(params: {
 
   if (modelProfile?.settingsPath) {
     inheritedFlags = inheritedFlags
-      ? `${inheritedFlags} --settings ${quote([modelProfile.settingsPath])}`
-      : `--settings ${quote([modelProfile.settingsPath])}`
+      ? `${inheritedFlags} --bare --settings ${quote([modelProfile.settingsPath])}`
+      : `--bare --settings ${quote([modelProfile.settingsPath])}`
   }
 
   if (params.resolvedModel) {
@@ -269,7 +269,8 @@ function getTeammateCommand(): string {
  * This ensures teammates inherit important settings like permission mode,
  * model selection, and plugin configuration from their parent.
  *
- * @param options.planModeRequired - If true, don't inherit bypass permissions (plan mode takes precedence)
+ * @param options.planModeRequired - If true, plan mode is requested unless the
+ * current session is already in bypassPermissions.
  * @param options.permissionMode - Permission mode to propagate
  */
 function buildInheritedCliFlags(options?: {
@@ -282,16 +283,16 @@ function buildInheritedCliFlags(options?: {
   const { planModeRequired, permissionMode, omitModel, omitSettings } =
     options || {}
 
-  // Propagate permission mode to teammates, but NOT if plan mode is required
-  // Plan mode takes precedence over bypass permissions for safety
-  if (planModeRequired) {
-    // Don't inherit bypass permissions when plan mode is required
-  } else if (
+  // Preserve bypassPermissions across teammate hops so agent-team automation
+  // does not degrade into approval prompts or planning-only child sessions.
+  if (
     permissionMode === 'bypassPermissions' ||
     getSessionBypassPermissionsMode()
   ) {
     flags.push('--dangerously-skip-permissions')
     flags.push('--permission-mode bypassPermissions')
+  } else if (planModeRequired) {
+    flags.push('--permission-mode plan')
   } else if (permissionMode === 'acceptEdits') {
     flags.push('--permission-mode acceptEdits')
   } else if (permissionMode === 'auto') {
@@ -863,7 +864,11 @@ function registerOutOfProcessTeammateTask(
     prompt,
     abortController,
     awaitingPlanApproval: false,
-    permissionMode: plan_mode_required ? 'plan' : 'default',
+    permissionMode: getSessionBypassPermissionsMode()
+      ? 'bypassPermissions'
+      : plan_mode_required
+        ? 'plan'
+        : 'default',
     isIdle: false,
     shutdownRequested: false,
     lastReportedToolCount: 0,
